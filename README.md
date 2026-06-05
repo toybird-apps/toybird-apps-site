@@ -1,29 +1,49 @@
 # Toybird Apps Site
 
-GitHub Pagesで公開する静的サイトです。
+GitHub Pages website for Toybird Apps.
 
-## 公開前に変更
+## Purpose
 
-`support@toybird.com` をサポート用メールアドレスに置換してください。
+Toybird Apps publishes useful utilities designed to make everyday work clearer, smoother, and easier.
 
-対象ファイル:
-- `apps/pointer-cue/privacy.html`
-- `apps/pointer-cue/support.html`
+## Published URLs
 
-## GitHub Pages公開手順
+If the GitHub account is `toybird-apps` and the repository is `toybird-apps-site`, the public URLs are:
 
-1. GitHubで `toybird-apps-site` リポジトリを作成します。
-2. `Add file` → `Upload files` を選択します。
-3. このZIPを展開し、`toybird-apps-site` フォルダ内のファイルとフォルダをすべてアップロードします。
-4. `Commit changes` を押します。
-5. `Settings` → `Pages` を開きます。
-6. `Source` を `Deploy from a branch` にします。
-7. Branchを `main`、Folderを `/(root)` にして保存します。
-8. 数分待ちます。
+```text
+Top:
+https://toybird-apps.github.io/toybird-apps-site/
 
-## URL
+Pointer Cue:
+https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/
 
-- Top: `https://toybird-apps.github.io/toybird-apps-site/`
-- Pointer Cue: `https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/`
-- Privacy Policy URL: `https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/privacy.html`
-- Support URL: `https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/support.html`
+Privacy Policy URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/privacy.html
+
+Support URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/support.html
+```
+
+## Support
+
+- Email: `support@toybird.com`
+
+## Upload
+
+Upload the contents of this folder to the root of the `toybird-apps-site` repository.
+
+## Structure
+
+```text
+toybird-apps-site/
+├── index.html
+├── styles.css
+├── README.md
+├── assets/
+│   └── logo.svg
+└── apps/
+    └── pointer-cue/
+        ├── index.html
+        ├── privacy.html
+        └── support.html
+```
