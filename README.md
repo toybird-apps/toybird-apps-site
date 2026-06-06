@@ -14,6 +14,24 @@ If the GitHub account is `toybird-apps` and the repository is `toybird-apps-site
 Top:
 https://toybird-apps.github.io/toybird-apps-site/
 
+DropReady Media:
+https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/
+
+DropReady Media Privacy Policy URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/privacy.html
+
+DropReady Media Support URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/support.html
+
+DropReady Media Japanese Page:
+https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/ja/
+
+DropReady Media Japanese Privacy Policy URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/ja/privacy.html
+
+DropReady Media Japanese Support URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/ja/support.html
+
 Pointer Cue:
 https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/
 
@@ -40,6 +58,15 @@ https://toybird-apps.github.io/toybird-apps-site/apps/meet-here-card/ja/privacy.
 
 Meet Here Card Japanese Support URL:
 https://toybird-apps.github.io/toybird-apps-site/apps/meet-here-card/ja/support.html
+```
+
+## DropReady Media App Information
+
+```text
+App Name: DropReady Media
+Bundle ID: com.toybirdapps.dropreadymedia
+Platform: macOS
+Minimum OS: macOS Ventura 13 or later
 ```
 
 ## Meet Here Card App Information
@@ -71,8 +98,17 @@ toybird-apps-site/
 ├── README.md
 ├── assets/
 │   ├── logo.svg
-│   └── meet-here-card-icon.png
+│   ├── meet-here-card-icon.png
+│   └── dropready-media-icon.png
 └── apps/
+    ├── dropready-media/
+    │   ├── index.html
+    │   ├── privacy.html
+    │   ├── support.html
+    │   └── ja/
+    │       ├── index.html
+    │       ├── privacy.html
+    │       └── support.html
     ├── pointer-cue/
     │   ├── index.html
     │   ├── privacy.html
@@ -91,10 +127,12 @@ toybird-apps-site/
 
 After publishing, verify:
 
-- The top page shows both Pointer Cue and Meet Here Card.
+- The top page shows DropReady Media, Pointer Cue, and Meet Here Card.
+- DropReady Media English and Japanese product pages load correctly.
+- DropReady Media English and Japanese support pages load correctly.
+- DropReady Media English and Japanese privacy policy pages load correctly.
+- DropReady Media language-switch links work.
 - Pointer Cue pages still load correctly.
-- Meet Here Card English and Japanese product pages load correctly.
-- Meet Here Card English and Japanese support pages load correctly.
-- Meet Here Card English and Japanese privacy policy pages load correctly.
-- Language-switch links work.
+- Meet Here Card English and Japanese pages still load correctly.
 - The `support@toybird.com` mail link opens correctly.
+- The DropReady Media icon loads correctly on the top page and product pages.
