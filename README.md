@@ -58,6 +58,24 @@ https://toybird-apps.github.io/toybird-apps-site/apps/meet-here-card/ja/privacy.
 
 Meet Here Card Japanese Support URL:
 https://toybird-apps.github.io/toybird-apps-site/apps/meet-here-card/ja/support.html
+
+Art Spot:
+https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/
+
+Art Spot Privacy Policy URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/privacy.html
+
+Art Spot Support URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/support.html
+
+Art Spot Japanese Page:
+https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/ja/
+
+Art Spot Japanese Privacy Policy URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/ja/privacy.html
+
+Art Spot Japanese Support URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/ja/support.html
 ```
 
 ## DropReady Media App Information
@@ -74,6 +92,17 @@ Minimum OS: macOS Ventura 13 or later
 ```text
 App Name: Meet Here Card
 Bundle ID: com.toybirdapps.meetherecard
+```
+
+
+## Art Spot App Information
+
+```text
+Japanese App Name: 名画まちがい探し
+English App Name: Art Spot
+Bundle ID: com.toybird.oddspot
+Platform: iOS
+Privacy: Uses Google AdMob and Google UMP
 ```
 
 ## Support
@@ -99,7 +128,8 @@ toybird-apps-site/
 ├── assets/
 │   ├── logo.svg
 │   ├── meet-here-card-icon.png
-│   └── dropready-media-icon.png
+│   ├── dropready-media-icon.png
+│   └── art-spot-icon.png
 └── apps/
     ├── dropready-media/
     │   ├── index.html
@@ -113,7 +143,15 @@ toybird-apps-site/
     │   ├── index.html
     │   ├── privacy.html
     │   └── support.html
-    └── meet-here-card/
+    ├── meet-here-card/
+        ├── index.html
+        ├── privacy.html
+        ├── support.html
+        └── ja/
+            ├── index.html
+            ├── privacy.html
+            └── support.html
+    └── art-spot/
         ├── index.html
         ├── privacy.html
         ├── support.html
@@ -127,7 +165,7 @@ toybird-apps-site/
 
 After publishing, verify:
 
-- The top page shows DropReady Media, Pointer Cue, and Meet Here Card.
+- The top page shows DropReady Media, Pointer Cue, Meet Here Card, and Art Spot.
 - DropReady Media English and Japanese product pages load correctly.
 - DropReady Media English and Japanese support pages load correctly.
 - DropReady Media English and Japanese privacy policy pages load correctly.
@@ -136,3 +174,5 @@ After publishing, verify:
 - Meet Here Card English and Japanese pages still load correctly.
 - The `support@toybird.com` mail link opens correctly.
 - The DropReady Media icon loads correctly on the top page and product pages.
+- Art Spot English and Japanese product, support, and privacy pages load correctly.
+- The Art Spot icon loads correctly on the top page and product pages.

@@ -5,3 +5,6 @@
 
 /* DropReady Media */
 .dropready-icon-showcase{background:radial-gradient(circle at 18% 14%,rgba(223,77,255,.30),transparent 28%),radial-gradient(circle at 82% 16%,rgba(32,139,255,.40),transparent 32%),linear-gradient(145deg,#0d1232,#071b54 74%)}.dropready-icon-showcase img{width:min(78%,300px);filter:drop-shadow(0 20px 34px rgba(15,35,105,.28))}.home-feature-icon{background:radial-gradient(circle at 22% 18%,rgba(217,75,255,.28),transparent 25%),radial-gradient(circle at 80% 14%,rgba(46,140,255,.38),transparent 30%),linear-gradient(145deg,#0a102a,#08265a 74%)}.home-feature-icon img{width:min(72%,260px);height:auto;filter:drop-shadow(0 18px 28px rgba(0,17,68,.42))}@media(max-width:780px){.nav-links{flex-wrap:wrap;justify-content:flex-end}.dropready-icon-showcase img{width:min(64%,230px)}}
+
+/* Art Spot */
+.artspot-icon-showcase{background:radial-gradient(circle at 24% 18%,rgba(105,183,255,.34),transparent 30%),radial-gradient(circle at 82% 20%,rgba(255,212,103,.30),transparent 32%),linear-gradient(145deg,#ecf8ff,#fff9e9 76%)}.artspot-icon-showcase img{width:min(74%,280px);filter:drop-shadow(0 18px 28px rgba(28,77,123,.24))}
