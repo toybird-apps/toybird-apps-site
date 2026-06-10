@@ -8,3 +8,7 @@
 
 /* Art Spot */
 .artspot-icon-showcase{background:radial-gradient(circle at 24% 18%,rgba(105,183,255,.34),transparent 30%),radial-gradient(circle at 82% 20%,rgba(255,212,103,.30),transparent 32%),linear-gradient(145deg,#ecf8ff,#fff9e9 76%)}.artspot-icon-showcase img{width:min(74%,280px);filter:drop-shadow(0 18px 28px rgba(28,77,123,.24))}
+
+
+/* Yuru Dansha */
+.yurudansha-icon-showcase{background:radial-gradient(circle at 22% 18%,rgba(255,200,147,.34),transparent 28%),radial-gradient(circle at 82% 18%,rgba(124,185,150,.34),transparent 32%),linear-gradient(145deg,#fff7e9,#edf7ef 78%)}.yurudansha-icon-showcase img{width:min(74%,280px);filter:drop-shadow(0 18px 28px rgba(55,112,75,.24))}

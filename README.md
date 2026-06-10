@@ -76,9 +76,29 @@ https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/ja/privacy.html
 
 Art Spot Japanese Support URL:
 https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/ja/support.html
+
+Yuru Dansha:
+https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/
+
+Yuru Dansha Privacy Policy URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/privacy.html
+
+Yuru Dansha Support URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/support.html
+
+Yuru Dansha Japanese Page:
+https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/
+
+Yuru Dansha Japanese Privacy Policy URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/privacy.html
+
+Yuru Dansha Japanese Support URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/support.html
 ```
 
-## DropReady Media App Information
+## App Information
+
+### DropReady Media
 
 ```text
 App Name: DropReady Media
@@ -87,15 +107,15 @@ Platform: macOS
 Minimum OS: macOS Ventura 13 or later
 ```
 
-## Meet Here Card App Information
+### Meet Here Card
 
 ```text
 App Name: Meet Here Card
 Bundle ID: com.toybirdapps.meetherecard
+Platform: iOS
 ```
 
-
-## Art Spot App Information
+### Art Spot
 
 ```text
 Japanese App Name: 名画まちがい探し
@@ -105,6 +125,16 @@ Platform: iOS
 Privacy: Uses Google AdMob and Google UMP
 ```
 
+### Yuru Dansha
+
+```text
+Japanese App Name: ゆる断写
+English App Name: Yuru Dansha
+Bundle ID: com.toybird.yurudansha
+Platform: iOS / iPadOS
+Privacy: Photo-library access with user permission; original media remains local; discarded-item thumbnails are stored locally for up to 30 days; uses Google AdMob and Google UMP
+```
+
 ## Support
 
 - Email: `support@toybird.com`
@@ -112,7 +142,7 @@ Privacy: Uses Google AdMob and Google UMP
 ## Manual Upload
 
 1. Download and extract the ZIP package.
-2. Open the extracted `toybird-apps-site_english_polished` folder.
+2. Open the extracted `toybird-apps-site_yuru-dansha_added` folder.
 3. Upload the contents of that folder to the root of the `toybird-apps-site` GitHub repository.
 4. Commit the changes.
 5. Wait for GitHub Pages deployment to finish.
@@ -125,11 +155,13 @@ toybird-apps-site/
 ├── index.html
 ├── styles.css
 ├── README.md
+├── app-ads.txt
 ├── assets/
 │   ├── logo.svg
 │   ├── meet-here-card-icon.png
 │   ├── dropready-media-icon.png
-│   └── art-spot-icon.png
+│   ├── art-spot-icon.png
+│   └── yuru-dansha-icon.png
 └── apps/
     ├── dropready-media/
     │   ├── index.html
@@ -144,14 +176,22 @@ toybird-apps-site/
     │   ├── privacy.html
     │   └── support.html
     ├── meet-here-card/
-        ├── index.html
-        ├── privacy.html
-        ├── support.html
-        └── ja/
-            ├── index.html
-            ├── privacy.html
-            └── support.html
-    └── art-spot/
+    │   ├── index.html
+    │   ├── privacy.html
+    │   ├── support.html
+    │   └── ja/
+    │       ├── index.html
+    │       ├── privacy.html
+    │       └── support.html
+    ├── art-spot/
+    │   ├── index.html
+    │   ├── privacy.html
+    │   ├── support.html
+    │   └── ja/
+    │       ├── index.html
+    │       ├── privacy.html
+    │       └── support.html
+    └── yuru-dansha/
         ├── index.html
         ├── privacy.html
         ├── support.html
@@ -165,14 +205,10 @@ toybird-apps-site/
 
 After publishing, verify:
 
-- The top page shows DropReady Media, Pointer Cue, Meet Here Card, and Art Spot.
-- DropReady Media English and Japanese product pages load correctly.
-- DropReady Media English and Japanese support pages load correctly.
-- DropReady Media English and Japanese privacy policy pages load correctly.
-- DropReady Media language-switch links work.
-- Pointer Cue pages still load correctly.
-- Meet Here Card English and Japanese pages still load correctly.
-- The `support@toybird.com` mail link opens correctly.
-- The DropReady Media icon loads correctly on the top page and product pages.
-- Art Spot English and Japanese product, support, and privacy pages load correctly.
-- The Art Spot icon loads correctly on the top page and product pages.
+- The top page shows DropReady Media, Pointer Cue, Meet Here Card, Art Spot, and Yuru Dansha.
+- Existing app pages still load correctly.
+- Yuru Dansha English and Japanese product, support, and privacy pages load correctly.
+- Yuru Dansha language-switch links work.
+- The `support@toybird.com` mail links open correctly.
+- The Yuru Dansha icon loads correctly on the top page and product pages.
+- `app-ads.txt` is present at the repository root.
