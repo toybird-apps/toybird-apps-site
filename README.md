@@ -32,6 +32,25 @@ https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/ja/privacy
 DropReady Media Japanese Support URL:
 https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/ja/support.html
 
+
+Meeting Ready:
+https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/
+
+Meeting Ready Privacy Policy URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/privacy.html
+
+Meeting Ready Support URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/support.html
+
+Meeting Ready Japanese Page:
+https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/ja/
+
+Meeting Ready Japanese Privacy Policy URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/ja/privacy.html
+
+Meeting Ready Japanese Support URL:
+https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/ja/support.html
+
 Pointer Cue:
 https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/
 
@@ -107,6 +126,17 @@ Platform: macOS
 Minimum OS: macOS Ventura 13 or later
 ```
 
+
+### Meeting Ready
+
+```text
+App Name: Meeting Ready
+Bundle ID: com.toybird.meetingready
+Platform: macOS
+Minimum OS: macOS Ventura 13 or later
+Privacy: No account, ads, analytics SDK, or tracking; calendar checks remain local; accesses public Zoom HTTPS pages for public version guidance
+```
+
 ### Meet Here Card
 
 ```text
@@ -171,6 +201,14 @@ toybird-apps-site/
     │       ├── index.html
     │       ├── privacy.html
     │       └── support.html
+    ├── meeting-ready/
+    │   ├── index.html
+    │   ├── privacy.html
+    │   ├── support.html
+    │   └── ja/
+    │       ├── index.html
+    │       ├── privacy.html
+    │       └── support.html
     ├── pointer-cue/
     │   ├── index.html
     │   ├── privacy.html
@@ -205,10 +243,19 @@ toybird-apps-site/
 
 After publishing, verify:
 
-- The top page shows DropReady Media, Pointer Cue, Meet Here Card, Art Spot, and Yuru Dansha.
+- The top page shows DropReady Media, Meeting Ready, Pointer Cue, Meet Here Card, Art Spot, and Yuru Dansha.
 - Existing app pages still load correctly.
 - Yuru Dansha English and Japanese product, support, and privacy pages load correctly.
 - Yuru Dansha language-switch links work.
 - The `support@toybird.com` mail links open correctly.
 - The Yuru Dansha icon loads correctly on the top page and product pages.
 - `app-ads.txt` is present at the repository root.
+
+
+## Meeting Ready Verification
+
+- The Meeting Ready English and Japanese product, support, and privacy pages load correctly.
+- The Meeting Ready language-switch links work.
+- The Meeting Ready `support@toybird.com` mail links open correctly.
+- The Meeting Ready icon loads correctly on the top page and product pages.
+- The Meeting Ready privacy policy accurately states that public Zoom HTTPS pages are used for public version guidance.
