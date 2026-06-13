@@ -1,18 +1,18 @@
 {
-  "source": "toybird-apps-site_find-it-show-it_added",
+  "source": "toybird-apps-site_prompt-ready_added",
   "app_ads_lines": [
     "google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0"
   ],
   "target_snippet_occurrences": 1,
-  "relative_links_checked": 539,
+  "relative_links_checked": 621,
   "broken_relative_links": [],
-  "find_it_show_it_pages": [
-    "apps/find-it-show-it/index.html",
-    "apps/find-it-show-it/privacy.html",
-    "apps/find-it-show-it/support.html",
-    "apps/find-it-show-it/ja/index.html",
-    "apps/find-it-show-it/ja/privacy.html",
-    "apps/find-it-show-it/ja/support.html"
+  "prompt_ready_pages": [
+    "apps/prompt-ready/index.html",
+    "apps/prompt-ready/privacy.html",
+    "apps/prompt-ready/support.html",
+    "apps/prompt-ready/ja/index.html",
+    "apps/prompt-ready/ja/privacy.html",
+    "apps/prompt-ready/ja/support.html"
   ],
   "files": [
     ".nojekyll",
@@ -51,6 +51,12 @@
     "apps/pointer-cue/index.html",
     "apps/pointer-cue/privacy.html",
     "apps/pointer-cue/support.html",
+    "apps/prompt-ready/index.html",
+    "apps/prompt-ready/ja/index.html",
+    "apps/prompt-ready/ja/privacy.html",
+    "apps/prompt-ready/ja/support.html",
+    "apps/prompt-ready/privacy.html",
+    "apps/prompt-ready/support.html",
     "apps/yuru-dansha/index.html",
     "apps/yuru-dansha/ja/index.html",
     "apps/yuru-dansha/ja/privacy.html",
@@ -63,6 +69,7 @@
     "assets/logo.svg",
     "assets/meet-here-card-icon.png",
     "assets/meeting-ready-icon.png",
+    "assets/prompt-ready-icon.png",
     "assets/yuru-dansha-icon.png",
     "index.html",
     "styles.css"

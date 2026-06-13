@@ -55,3 +55,21 @@ https://toybird-apps.github.io/apps/yuru-dansha/ja/
 ```
 
 ページが重複しても問題ありません。App Storeやアプリで参照済みのURLは、そのまま維持してください。
+
+## Prompt Ready 公開後の追加確認URL
+
+```text
+https://toybird-apps.github.io/apps/prompt-ready/
+https://toybird-apps.github.io/apps/prompt-ready/support.html
+https://toybird-apps.github.io/apps/prompt-ready/privacy.html
+https://toybird-apps.github.io/apps/prompt-ready/ja/
+https://toybird-apps.github.io/apps/prompt-ready/ja/support.html
+https://toybird-apps.github.io/apps/prompt-ready/ja/privacy.html
+
+https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/
+https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/support.html
+https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/privacy.html
+https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/ja/
+https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/ja/support.html
+https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/ja/privacy.html
+```
