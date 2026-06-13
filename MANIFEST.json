@@ -1,11 +1,19 @@
 {
-  "source": "toybird-apps-site_yuru-dansha_app-ads_verified",
+  "source": "toybird-apps-site_find-it-show-it_added",
   "app_ads_lines": [
     "google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0"
   ],
   "target_snippet_occurrences": 1,
-  "relative_links_checked": 455,
+  "relative_links_checked": 539,
   "broken_relative_links": [],
+  "find_it_show_it_pages": [
+    "apps/find-it-show-it/index.html",
+    "apps/find-it-show-it/privacy.html",
+    "apps/find-it-show-it/support.html",
+    "apps/find-it-show-it/ja/index.html",
+    "apps/find-it-show-it/ja/privacy.html",
+    "apps/find-it-show-it/ja/support.html"
+  ],
   "files": [
     ".nojekyll",
     "UPLOAD_TO_BOTH_REPOSITORIES.md",
@@ -22,6 +30,12 @@
     "apps/dropready-media/ja/support.html",
     "apps/dropready-media/privacy.html",
     "apps/dropready-media/support.html",
+    "apps/find-it-show-it/index.html",
+    "apps/find-it-show-it/ja/index.html",
+    "apps/find-it-show-it/ja/privacy.html",
+    "apps/find-it-show-it/ja/support.html",
+    "apps/find-it-show-it/privacy.html",
+    "apps/find-it-show-it/support.html",
     "apps/meet-here-card/index.html",
     "apps/meet-here-card/ja/index.html",
     "apps/meet-here-card/ja/privacy.html",
@@ -45,6 +59,7 @@
     "apps/yuru-dansha/support.html",
     "assets/art-spot-icon.png",
     "assets/dropready-media-icon.png",
+    "assets/find-it-show-it-icon.png",
     "assets/logo.svg",
     "assets/meet-here-card-icon.png",
     "assets/meeting-ready-icon.png",

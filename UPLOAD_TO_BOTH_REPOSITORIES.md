@@ -42,6 +42,10 @@ https://toybird-apps.github.io/toybird-apps-site/app-ads.txt
 https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/
 https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/support.html
 https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/privacy.html
+https://toybird-apps.github.io/toybird-apps-site/apps/find-it-show-it/
+https://toybird-apps.github.io/toybird-apps-site/apps/find-it-show-it/support.html
+https://toybird-apps.github.io/toybird-apps-site/apps/find-it-show-it/privacy.html
+https://toybird-apps.github.io/toybird-apps-site/apps/find-it-show-it/ja/
 ```
 
 ルート側にも同じページが公開されます。
