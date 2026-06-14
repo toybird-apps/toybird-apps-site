@@ -1,10 +1,10 @@
 {
-  "source": "toybird-apps-site_prompt-ready_added",
+  "source": "toybird-apps-site_ai-lifematch_added",
   "app_ads_lines": [
     "google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0"
   ],
   "target_snippet_occurrences": 1,
-  "relative_links_checked": 621,
+  "relative_links_checked": 702,
   "broken_relative_links": [],
   "prompt_ready_pages": [
     "apps/prompt-ready/index.html",
@@ -16,8 +16,15 @@
   ],
   "files": [
     ".nojekyll",
+    "MANIFEST.json",
     "UPLOAD_TO_BOTH_REPOSITORIES.md",
     "app-ads.txt",
+    "apps/ai-lifematch/index.html",
+    "apps/ai-lifematch/ja/index.html",
+    "apps/ai-lifematch/ja/privacy.html",
+    "apps/ai-lifematch/ja/support.html",
+    "apps/ai-lifematch/privacy.html",
+    "apps/ai-lifematch/support.html",
     "apps/art-spot/index.html",
     "apps/art-spot/ja/index.html",
     "apps/art-spot/ja/privacy.html",
@@ -63,6 +70,7 @@
     "apps/yuru-dansha/ja/support.html",
     "apps/yuru-dansha/privacy.html",
     "apps/yuru-dansha/support.html",
+    "assets/ai-lifematch-icon.png",
     "assets/art-spot-icon.png",
     "assets/dropready-media-icon.png",
     "assets/find-it-show-it-icon.png",
@@ -73,5 +81,13 @@
     "assets/yuru-dansha-icon.png",
     "index.html",
     "styles.css"
+  ],
+  "ai_lifematch_pages": [
+    "apps/ai-lifematch/index.html",
+    "apps/ai-lifematch/privacy.html",
+    "apps/ai-lifematch/support.html",
+    "apps/ai-lifematch/ja/index.html",
+    "apps/ai-lifematch/ja/privacy.html",
+    "apps/ai-lifematch/ja/support.html"
   ]
 }
