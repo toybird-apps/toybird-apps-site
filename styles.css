@@ -19,3 +19,7 @@
 
 /* Prompt Ready */
 .promptready-icon-showcase{background:radial-gradient(circle at 22% 18%,rgba(104,146,255,.34),transparent 30%),radial-gradient(circle at 82% 18%,rgba(175,106,255,.32),transparent 32%),linear-gradient(145deg,#edf4ff,#f7efff 78%)}.promptready-icon-showcase img{width:min(74%,280px);filter:drop-shadow(0 18px 28px rgba(53,73,145,.24))}
+
+
+/* VoicePocket */
+.voicepocket-icon-showcase{background:radial-gradient(circle at 22% 18%,rgba(73,211,208,.34),transparent 30%),radial-gradient(circle at 82% 18%,rgba(255,122,69,.26),transparent 32%),linear-gradient(145deg,#eefdfb,#fff6eb 78%)}.voicepocket-icon-showcase img{width:min(74%,280px);filter:drop-shadow(0 18px 28px rgba(37,115,128,.24))}
