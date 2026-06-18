@@ -1,9 +1,9 @@
 {
-  "source": "toybird-apps-site_screenshot-ledger_added",
+  "source": "toybird-apps-site_fifteenminwalk_added",
   "app_ads_lines": [
     "google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0"
   ],
-  "relative_links_checked": 817,
+  "relative_links_checked": 855,
   "broken_relative_links": [],
   "screenshot_ledger_pages": [
     "apps/screenshot-ledger/index.html",
@@ -13,6 +13,7 @@
   "screenshot_ledger_icon": "assets/screenshot-ledger-icon.png",
   "files": [
     ".nojekyll",
+    "MANIFEST.json",
     "UPLOAD_TO_BOTH_REPOSITORIES.md",
     "app-ads.txt",
     "apps/ai-lifematch/index.html",
@@ -33,6 +34,9 @@
     "apps/dropready-media/ja/support.html",
     "apps/dropready-media/privacy.html",
     "apps/dropready-media/support.html",
+    "apps/fifteenminwalk/index.html",
+    "apps/fifteenminwalk/privacy.html",
+    "apps/fifteenminwalk/support.html",
     "apps/find-it-show-it/index.html",
     "apps/find-it-show-it/ja/index.html",
     "apps/find-it-show-it/ja/privacy.html",
@@ -78,6 +82,7 @@
     "assets/ai-lifematch-icon.png",
     "assets/art-spot-icon.png",
     "assets/dropready-media-icon.png",
+    "assets/fifteenminwalk-icon.png",
     "assets/find-it-show-it-icon.png",
     "assets/logo.svg",
     "assets/meet-here-card-icon.png",
@@ -87,7 +92,12 @@
     "assets/voicepocket-icon.png",
     "assets/yuru-dansha-icon.png",
     "index.html",
-    "styles.css",
-    "MANIFEST.json"
-  ]
+    "styles.css"
+  ],
+  "fifteenminwalk_pages": [
+    "apps/fifteenminwalk/index.html",
+    "apps/fifteenminwalk/privacy.html",
+    "apps/fifteenminwalk/support.html"
+  ],
+  "fifteenminwalk_icon": "assets/fifteenminwalk-icon.png"
 }
