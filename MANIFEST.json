@@ -1,22 +1,18 @@
 {
-  "source": "toybird-apps-site_voicepocket_added",
+  "source": "toybird-apps-site_screenshot-ledger_added",
   "app_ads_lines": [
     "google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0"
   ],
-  "relative_links_checked": 782,
+  "relative_links_checked": 817,
   "broken_relative_links": [],
-  "voicepocket_pages": [
-    "apps/voicepocket/index.html",
-    "apps/voicepocket/privacy.html",
-    "apps/voicepocket/support.html",
-    "apps/voicepocket/ja/index.html",
-    "apps/voicepocket/ja/privacy.html",
-    "apps/voicepocket/ja/support.html"
+  "screenshot_ledger_pages": [
+    "apps/screenshot-ledger/index.html",
+    "apps/screenshot-ledger/privacy.html",
+    "apps/screenshot-ledger/support.html"
   ],
-  "voicepocket_icon": "assets/voicepocket-icon.png",
+  "screenshot_ledger_icon": "assets/screenshot-ledger-icon.png",
   "files": [
     ".nojekyll",
-    "MANIFEST.json",
     "UPLOAD_TO_BOTH_REPOSITORIES.md",
     "app-ads.txt",
     "apps/ai-lifematch/index.html",
@@ -64,6 +60,9 @@
     "apps/prompt-ready/ja/support.html",
     "apps/prompt-ready/privacy.html",
     "apps/prompt-ready/support.html",
+    "apps/screenshot-ledger/index.html",
+    "apps/screenshot-ledger/privacy.html",
+    "apps/screenshot-ledger/support.html",
     "apps/voicepocket/index.html",
     "apps/voicepocket/ja/index.html",
     "apps/voicepocket/ja/privacy.html",
@@ -84,9 +83,11 @@
     "assets/meet-here-card-icon.png",
     "assets/meeting-ready-icon.png",
     "assets/prompt-ready-icon.png",
+    "assets/screenshot-ledger-icon.png",
     "assets/voicepocket-icon.png",
     "assets/yuru-dansha-icon.png",
     "index.html",
-    "styles.css"
+    "styles.css",
+    "MANIFEST.json"
   ]
 }
