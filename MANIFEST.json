@@ -1,9 +1,9 @@
 {
-  "source": "toybird-apps-site_fifteenminwalk_added",
+  "source": "toybird-apps-site_with_ai_memorize_sheet_added",
   "app_ads_lines": [
     "google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0"
   ],
-  "relative_links_checked": 855,
+  "relative_links_checked": 938,
   "broken_relative_links": [],
   "screenshot_ledger_pages": [
     "apps/screenshot-ledger/index.html",
@@ -22,6 +22,12 @@
     "apps/ai-lifematch/ja/support.html",
     "apps/ai-lifematch/privacy.html",
     "apps/ai-lifematch/support.html",
+    "apps/ai-memorize-sheet/index.html",
+    "apps/ai-memorize-sheet/ja/index.html",
+    "apps/ai-memorize-sheet/ja/privacy.html",
+    "apps/ai-memorize-sheet/ja/support.html",
+    "apps/ai-memorize-sheet/privacy.html",
+    "apps/ai-memorize-sheet/support.html",
     "apps/art-spot/index.html",
     "apps/art-spot/ja/index.html",
     "apps/art-spot/ja/privacy.html",
@@ -80,6 +86,7 @@
     "apps/yuru-dansha/privacy.html",
     "apps/yuru-dansha/support.html",
     "assets/ai-lifematch-icon.png",
+    "assets/ai-memorize-sheet-icon.png",
     "assets/art-spot-icon.png",
     "assets/dropready-media-icon.png",
     "assets/fifteenminwalk-icon.png",
@@ -99,5 +106,14 @@
     "apps/fifteenminwalk/privacy.html",
     "apps/fifteenminwalk/support.html"
   ],
-  "fifteenminwalk_icon": "assets/fifteenminwalk-icon.png"
+  "fifteenminwalk_icon": "assets/fifteenminwalk-icon.png",
+  "ai_memorize_sheet_pages": [
+    "apps/ai-memorize-sheet/index.html",
+    "apps/ai-memorize-sheet/privacy.html",
+    "apps/ai-memorize-sheet/support.html",
+    "apps/ai-memorize-sheet/ja/index.html",
+    "apps/ai-memorize-sheet/ja/privacy.html",
+    "apps/ai-memorize-sheet/ja/support.html"
+  ],
+  "ai_memorize_sheet_icon": "assets/ai-memorize-sheet-icon.png"
 }
