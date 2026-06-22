@@ -1,5 +1,5 @@
 {
-  "source": "toybird-apps-site_with_ai_memorize_sheet_added",
+  "source": "toybird-apps-site_with_qbr_survival_added",
   "app_ads_lines": [
     "google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0"
   ],
@@ -70,6 +70,9 @@
     "apps/prompt-ready/ja/support.html",
     "apps/prompt-ready/privacy.html",
     "apps/prompt-ready/support.html",
+    "apps/qbr-survival/index.html",
+    "apps/qbr-survival/privacy.html",
+    "apps/qbr-survival/support.html",
     "apps/screenshot-ledger/index.html",
     "apps/screenshot-ledger/privacy.html",
     "apps/screenshot-ledger/support.html",
@@ -95,6 +98,9 @@
     "assets/meet-here-card-icon.png",
     "assets/meeting-ready-icon.png",
     "assets/prompt-ready-icon.png",
+    "assets/qbr-survival-hero.png",
+    "assets/qbr-survival-icon.png",
+    "assets/qbr-survival-result-preview.png",
     "assets/screenshot-ledger-icon.png",
     "assets/voicepocket-icon.png",
     "assets/yuru-dansha-icon.png",
@@ -115,5 +121,12 @@
     "apps/ai-memorize-sheet/ja/privacy.html",
     "apps/ai-memorize-sheet/ja/support.html"
   ],
-  "ai_memorize_sheet_icon": "assets/ai-memorize-sheet-icon.png"
+  "ai_memorize_sheet_icon": "assets/ai-memorize-sheet-icon.png",
+  "qbr_survival_pages": [
+    "apps/qbr-survival/index.html",
+    "apps/qbr-survival/privacy.html",
+    "apps/qbr-survival/support.html"
+  ],
+  "qbr_survival_icon": "assets/qbr-survival-icon.png",
+  "qbr_survival_hero": "assets/qbr-survival-hero.png"
 }
