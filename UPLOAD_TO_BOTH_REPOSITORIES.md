@@ -73,3 +73,15 @@ https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/ja/
 https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/ja/support.html
 https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/ja/privacy.html
 ```
+## KoeSub 公開後の追加確認URL
+
+```text
+https://toybird-apps.github.io/apps/koesub/
+https://toybird-apps.github.io/apps/koesub/support.html
+https://toybird-apps.github.io/apps/koesub/privacy.html
+
+https://toybird-apps.github.io/toybird-apps-site/apps/koesub/
+https://toybird-apps.github.io/toybird-apps-site/apps/koesub/support.html
+https://toybird-apps.github.io/toybird-apps-site/apps/koesub/privacy.html
+```
+

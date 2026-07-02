@@ -1,9 +1,9 @@
 {
-  "source": "toybird-apps-site_with_qbr_survival_added",
+  "source": "toybird-apps-site_with_brainlot_puzzle_added",
   "app_ads_lines": [
     "google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0"
   ],
-  "relative_links_checked": 938,
+  "relative_links_checked": 1051,
   "broken_relative_links": [],
   "screenshot_ledger_pages": [
     "apps/screenshot-ledger/index.html",
@@ -34,6 +34,9 @@
     "apps/art-spot/ja/support.html",
     "apps/art-spot/privacy.html",
     "apps/art-spot/support.html",
+    "apps/brainlot-puzzle/index.html",
+    "apps/brainlot-puzzle/privacy.html",
+    "apps/brainlot-puzzle/support.html",
     "apps/dropready-media/index.html",
     "apps/dropready-media/ja/index.html",
     "apps/dropready-media/ja/privacy.html",
@@ -49,6 +52,9 @@
     "apps/find-it-show-it/ja/support.html",
     "apps/find-it-show-it/privacy.html",
     "apps/find-it-show-it/support.html",
+    "apps/koesub/index.html",
+    "apps/koesub/privacy.html",
+    "apps/koesub/support.html",
     "apps/meet-here-card/index.html",
     "apps/meet-here-card/ja/index.html",
     "apps/meet-here-card/ja/privacy.html",
@@ -91,6 +97,7 @@
     "assets/ai-lifematch-icon.png",
     "assets/ai-memorize-sheet-icon.png",
     "assets/art-spot-icon.png",
+    "assets/brainlot-puzzle-icon.png",
     "assets/dropready-media-icon.png",
     "assets/fifteenminwalk-icon.png",
     "assets/find-it-show-it-icon.png",
@@ -128,5 +135,17 @@
     "apps/qbr-survival/support.html"
   ],
   "qbr_survival_icon": "assets/qbr-survival-icon.png",
-  "qbr_survival_hero": "assets/qbr-survival-hero.png"
+  "qbr_survival_hero": "assets/qbr-survival-hero.png",
+  "koesub_pages": [
+    "apps/koesub/index.html",
+    "apps/koesub/privacy.html",
+    "apps/koesub/support.html"
+  ],
+  "koesub_icon": "assets/logo.svg",
+  "brainlot_puzzle_pages": [
+    "apps/brainlot-puzzle/index.html",
+    "apps/brainlot-puzzle/privacy.html",
+    "apps/brainlot-puzzle/support.html"
+  ],
+  "brainlot_puzzle_icon": "assets/brainlot-puzzle-icon.png"
 }

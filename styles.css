@@ -38,3 +38,9 @@
 .qbr-icon-showcase img{width:min(74%,280px);filter:drop-shadow(0 18px 28px rgba(0,0,0,.38))}
 .qbr-visual-section{padding-top:36px;padding-bottom:36px}.wide-product-image{display:block;width:100%;max-width:1120px;margin:auto;border-radius:24px;border:1px solid var(--line);box-shadow:var(--shadow)}
 @media(max-width:780px){.qbr-visual-section{padding-top:24px;padding-bottom:24px}.wide-product-image{border-radius:18px}}
+
+
+/* Brainlot Puzzle */
+.brainlot-icon-showcase{background:radial-gradient(circle at 22% 18%,rgba(42,220,255,.34),transparent 30%),radial-gradient(circle at 82% 18%,rgba(255,228,67,.30),transparent 32%),linear-gradient(145deg,#06c9dd,#ff3b52 78%)}
+.brainlot-icon-showcase img{width:min(78%,300px);filter:drop-shadow(0 18px 28px rgba(18,64,91,.30))}
+@media(max-width:780px){.brainlot-icon-showcase img{width:min(64%,230px)}}
