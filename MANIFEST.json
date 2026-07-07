@@ -1,16 +1,17 @@
 {
-  "source": "toybird-apps-site_with_brainlot_puzzle_added",
+  "source": "toybird-labs-site_with_brainlot_puzzle_and_pocket_screen",
   "app_ads_lines": [
     "google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0"
   ],
-  "relative_links_checked": 1051,
+  "relative_links_checked": 1088,
   "broken_relative_links": [],
-  "screenshot_ledger_pages": [
-    "apps/screenshot-ledger/index.html",
-    "apps/screenshot-ledger/privacy.html",
-    "apps/screenshot-ledger/support.html"
+  "pocket_screen_pages": [
+    "apps/pocket-screen/index.html",
+    "apps/pocket-screen/privacy.html",
+    "apps/pocket-screen/support.html"
   ],
-  "screenshot_ledger_icon": "assets/screenshot-ledger-icon.png",
+  "pocket_screen_icon": "assets/pocket-screen-icon.png",
+  "branding": "Toybird Labs",
   "files": [
     ".nojekyll",
     "MANIFEST.json",
@@ -67,6 +68,9 @@
     "apps/meeting-ready/ja/support.html",
     "apps/meeting-ready/privacy.html",
     "apps/meeting-ready/support.html",
+    "apps/pocket-screen/index.html",
+    "apps/pocket-screen/privacy.html",
+    "apps/pocket-screen/support.html",
     "apps/pointer-cue/index.html",
     "apps/pointer-cue/privacy.html",
     "apps/pointer-cue/support.html",
@@ -104,6 +108,7 @@
     "assets/logo.svg",
     "assets/meet-here-card-icon.png",
     "assets/meeting-ready-icon.png",
+    "assets/pocket-screen-icon.png",
     "assets/prompt-ready-icon.png",
     "assets/qbr-survival-hero.png",
     "assets/qbr-survival-icon.png",
@@ -113,39 +118,5 @@
     "assets/yuru-dansha-icon.png",
     "index.html",
     "styles.css"
-  ],
-  "fifteenminwalk_pages": [
-    "apps/fifteenminwalk/index.html",
-    "apps/fifteenminwalk/privacy.html",
-    "apps/fifteenminwalk/support.html"
-  ],
-  "fifteenminwalk_icon": "assets/fifteenminwalk-icon.png",
-  "ai_memorize_sheet_pages": [
-    "apps/ai-memorize-sheet/index.html",
-    "apps/ai-memorize-sheet/privacy.html",
-    "apps/ai-memorize-sheet/support.html",
-    "apps/ai-memorize-sheet/ja/index.html",
-    "apps/ai-memorize-sheet/ja/privacy.html",
-    "apps/ai-memorize-sheet/ja/support.html"
-  ],
-  "ai_memorize_sheet_icon": "assets/ai-memorize-sheet-icon.png",
-  "qbr_survival_pages": [
-    "apps/qbr-survival/index.html",
-    "apps/qbr-survival/privacy.html",
-    "apps/qbr-survival/support.html"
-  ],
-  "qbr_survival_icon": "assets/qbr-survival-icon.png",
-  "qbr_survival_hero": "assets/qbr-survival-hero.png",
-  "koesub_pages": [
-    "apps/koesub/index.html",
-    "apps/koesub/privacy.html",
-    "apps/koesub/support.html"
-  ],
-  "koesub_icon": "assets/logo.svg",
-  "brainlot_puzzle_pages": [
-    "apps/brainlot-puzzle/index.html",
-    "apps/brainlot-puzzle/privacy.html",
-    "apps/brainlot-puzzle/support.html"
-  ],
-  "brainlot_puzzle_icon": "assets/brainlot-puzzle-icon.png"
+  ]
 }
