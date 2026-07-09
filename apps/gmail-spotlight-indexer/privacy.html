@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gmail Spotlight Indexer Privacy Policy | Toybird Labs</title>
+  <meta name="description" content="Privacy policy for Gmail Spotlight Indexer, including Google API data use and local storage practices.">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="../../assets/gmail-spotlight-indexer-icon.png">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="../../">
+      <span class="brand-mark"><img src="../../assets/logo.svg" alt="" width="26" height="26"></span>
+      <span>Toybird Labs</span>
+    </a>
+    <div class="nav-links">
+      <a href="../../">Apps</a>
+      <a href="./">Gmail Spotlight Indexer</a>
+      <a href="support.html">Support</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <span class="eyebrow">Gmail Spotlight Indexer</span>
+    <h1>Privacy Policy</h1>
+    <p class="lead">Last updated: July 9, 2026</p>
+  </section>
+
+  <section class="content">
+    <article class="card">
+      <p>Gmail Spotlight Indexer is a macOS app that lets you add selected Gmail metadata to the standard macOS Spotlight search index. This policy explains what information the app accesses, how it is used, where it is stored, and how you can remove it.</p>
+    </article>
+
+    <article class="card">
+      <h2>Summary</h2>
+      <ul>
+        <li>The app accesses Gmail metadata only after you sign in with Google and approve access.</li>
+        <li>The app does not fetch full Gmail message bodies.</li>
+        <li>The app does not download Gmail attachment files.</li>
+        <li>The app does not send, delete, archive, label, or otherwise modify Gmail messages.</li>
+        <li>Gmail-derived metadata is stored locally on your Mac for Spotlight indexing.</li>
+        <li>Gmail-derived metadata is not sent to Toybird Labs servers.</li>
+        <li>The app does not include advertising, analytics, tracking SDKs, or third-party data collection SDKs.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Google Account Sign-In</h2>
+      <p>When you add a Gmail account, Gmail Spotlight Indexer opens Google’s official sign-in and consent page in your default browser. You enter your Google password only on Google’s page. The app never sees or stores your Google password.</p>
+      <p>The app may request the following Google OAuth permissions:</p>
+      <ul>
+        <li><span class="code-like">openid</span></li>
+        <li><span class="code-like">userinfo.email</span></li>
+        <li><span class="code-like">userinfo.profile</span></li>
+        <li><span class="code-like">https://www.googleapis.com/auth/gmail.metadata</span></li>
+      </ul>
+      <p>These permissions are used to identify the signed-in account and to read Gmail metadata needed to create local Spotlight search items.</p>
+    </article>
+
+    <article class="card">
+      <h2>Gmail Data Accessed</h2>
+      <p>For each Gmail account you add, the app may access and locally store metadata such as:</p>
+      <ul>
+        <li>Account email address and display name</li>
+        <li>Gmail message ID and thread ID</li>
+        <li>RFC 822 Message-ID header</li>
+        <li>Subject</li>
+        <li>From, To, and Cc headers</li>
+        <li>Date</li>
+        <li>Gmail labels</li>
+        <li>Unread, starred, and important state</li>
+        <li>Whether a message appears to have an attachment</li>
+        <li>Gmail snippet, only if you enable snippet indexing for that account</li>
+      </ul>
+      <p>Snippet indexing is off by default and can be managed separately for each Gmail account.</p>
+    </article>
+
+    <article class="card">
+      <h2>Gmail Data Not Accessed or Modified</h2>
+      <p>Gmail Spotlight Indexer does not fetch full message bodies and does not download attachment files.</p>
+      <p>The app does not request permission to send email, delete email, archive email, label email, mark email as read or unread, or otherwise modify your Gmail mailbox.</p>
+    </article>
+
+    <article class="card">
+      <h2>How the App Uses Gmail Data</h2>
+      <p>Gmail-derived metadata is used only to create and maintain local macOS Spotlight search items and to open the corresponding Gmail conversation in your default browser when you choose a result.</p>
+      <p>The app indexes the recent 30 days first. Depending on your per-account setting, it may then index older metadata up to the selected history range: recent 30 days, 3 months, 6 months, 1 year, 2 years, or all mail.</p>
+    </article>
+
+    <article class="card">
+      <h2>Local Storage</h2>
+      <p>The app stores Gmail-derived metadata locally on your Mac in the app’s local storage area and registers searchable items with macOS Core Spotlight.</p>
+      <p>Google access tokens and refresh tokens are stored in macOS Keychain. Tokens are not stored in the local metadata database.</p>
+    </article>
+
+    <article class="card">
+      <h2>Data Sharing and Transfer</h2>
+      <p>Gmail Spotlight Indexer does not sell, rent, or share Gmail-derived metadata with Toybird Labs servers, advertisers, analytics providers, data brokers, or external AI services.</p>
+      <p>The app communicates with Google APIs to authenticate your account and retrieve Gmail metadata that you approved. It may also open Gmail URLs in your default browser when you choose a Spotlight result.</p>
+      <p>Gmail-derived metadata is processed locally on your Mac and is not transferred to Toybird Labs or third-party servers by the app.</p>
+    </article>
+
+    <article class="card">
+      <h2>Google API Services User Data Policy</h2>
+      <p>Gmail Spotlight Indexer’s use and transfer of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+    </article>
+
+    <article class="card">
+      <h2>Deleting Data</h2>
+      <p>You can remove a Gmail account inside the app. Removing an account deletes the account’s locally stored Gmail metadata, saved Keychain tokens, and Core Spotlight index items from your Mac.</p>
+      <p>You can also revoke the app’s Google access from your Google Account permissions page. Revoking access prevents future Gmail metadata access, but it does not automatically remove local metadata already stored on your Mac. To remove local metadata, remove the account inside the app.</p>
+    </article>
+
+    <article class="card">
+      <h2>Support Email</h2>
+      <p>If you contact support by email, the information you choose to include in your message is handled through your email provider and the support mailbox. Do not include sensitive message content unless you intentionally choose to share it.</p>
+    </article>
+
+    <article class="card">
+      <h2>Children</h2>
+      <p>Gmail Spotlight Indexer is not directed to children and does not knowingly collect personal information from children.</p>
+    </article>
+
+    <article class="card">
+      <h2>Policy Updates</h2>
+      <p>This policy may be updated if the app’s features or data-handling practices change. The updated date will be shown on this page.</p>
+    </article>
+
+    <article class="card">
+      <h2>Contact</h2>
+      <p>For questions about this privacy policy, contact <a href="mailto:support@toybird.com?subject=Gmail%20Spotlight%20Indexer%20Privacy">support@toybird.com</a>.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© 2026 Toybird Labs</span>
+    <span class="footer-links">
+      <a href="./">Gmail Spotlight Indexer</a>
+      <a href="support.html">Support</a>
+    </span>
+  </div>
+</footer>
+</body>
+</html>

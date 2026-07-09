@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gmail Spotlight Indexer | Toybird Labs</title>
+  <meta name="description" content="Gmail Spotlight Indexer adds selected Gmail metadata to the standard macOS Spotlight search without using Apple Mail or fetching full message bodies.">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="../../assets/gmail-spotlight-indexer-icon.png">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="../../">
+      <span class="brand-mark"><img src="../../assets/logo.svg" alt="" width="26" height="26"></span>
+      <span>Toybird Labs</span>
+    </a>
+    <div class="nav-links">
+      <a href="../../">Apps</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero product-hero">
+    <div class="product-hero-grid">
+      <div>
+        <span class="eyebrow">macOS utility for Web Gmail users</span>
+        <h1>Gmail Spotlight Indexer</h1>
+        <p class="lead">Search selected Gmail metadata from the standard macOS Spotlight window without setting up Apple Mail or downloading full message bodies.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="support.html">View Support</a>
+          <a class="button button-secondary" href="privacy.html">Read Privacy Policy</a>
+        </div>
+      </div>
+      <div class="app-icon-showcase gmailspotlight-icon-showcase" aria-hidden="true">
+        <img src="../../assets/gmail-spotlight-indexer-icon.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="section-muted">
+    <div class="inner">
+      <h2>What it does</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Gmail results in Spotlight</h3>
+          <p>After you add a Gmail account, the app registers Gmail-derived search items with Core Spotlight so they can appear in the normal macOS Spotlight search experience.</p>
+        </article>
+        <article class="card">
+          <h3>Designed for Web Gmail</h3>
+          <p>Gmail Spotlight Indexer is for people who use Gmail in a browser and do not want to set up Apple Mail just to find old messages from Spotlight.</p>
+        </article>
+        <article class="card">
+          <h3>Open results in Gmail</h3>
+          <p>When you choose an indexed result, the app opens the matching Gmail conversation in your default browser using the signed-in Google account.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Metadata-first indexing</h2>
+    <p>Gmail Spotlight Indexer is intentionally limited to message metadata. It uses Gmail metadata access to read information such as subject, sender, recipients, date, labels, unread/starred/important state, attachment presence, message ID, and thread ID.</p>
+    <p>The app does not fetch full Gmail message bodies, does not download attachment files, and does not request permission to send, delete, or modify your email.</p>
+    <p>Snippets are optional per Gmail account and are off by default. If enabled, Gmail’s short snippet may be included in the local Spotlight index for that account. You can turn snippets off again and rebuild the index without snippets.</p>
+  </section>
+
+  <section class="section-muted">
+    <div class="inner">
+      <h2>Account-level controls</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Multiple Gmail accounts</h3>
+          <p>Add more than one Gmail account and manage each mailbox separately.</p>
+        </article>
+        <article class="card">
+          <h3>Choose history range</h3>
+          <p>For each account, choose how far back to keep indexed: recent 30 days, 3 months, 6 months, 1 year, 2 years, or all mail.</p>
+        </article>
+        <article class="card">
+          <h3>Pause, resume, remove</h3>
+          <p>Pause a long-running sync, resume it later, or remove an account. Removing an account deletes its local metadata, saved tokens, and Spotlight index items.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>How it works</h2>
+    <ol>
+      <li>Open Gmail Spotlight Indexer on your Mac.</li>
+      <li>Click Add Gmail Account.</li>
+      <li>Sign in on Google’s official sign-in page in your default browser.</li>
+      <li>Allow Gmail metadata access.</li>
+      <li>The app indexes the recent 30 days first so results can become searchable quickly.</li>
+      <li>Depending on your account settings, older mail is indexed afterward while the app is open.</li>
+    </ol>
+    <p class="notice">Gmail Spotlight Indexer stores Gmail-derived metadata locally on your Mac. It does not send Gmail metadata to Toybird Labs servers or third-party analytics services.</p>
+  </section>
+
+  <section class="section-muted">
+    <div class="inner">
+      <h2>System Requirements</h2>
+      <p>Gmail Spotlight Indexer requires macOS 13 or later and a Google account with Gmail access. A browser session signed in to the target Google account is recommended when opening Gmail results.</p>
+      <p class="muted">Gmail is a trademark of Google LLC. Gmail Spotlight Indexer is an independent Toybird Labs app and is not affiliated with, endorsed by, or sponsored by Google LLC.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© 2026 Toybird Labs</span>
+    <span class="footer-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </span>
+  </div>
+</footer>
+</body>
+</html>
