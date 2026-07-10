@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Gmail Spotlight Indexer Support | Toybird Labs</title>
-  <meta name="description" content="Support resources, setup notes, and frequently asked questions for Gmail Spotlight Indexer.">
+  <title>Spotlight Indexer for Gmail Support | Toybird Labs</title>
+  <meta name="description" content="Support resources, setup notes, purchase help, and frequently asked questions for Spotlight Indexer for Gmail.">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="icon" href="../../assets/gmail-spotlight-indexer-icon.png">
 </head>
@@ -17,7 +17,7 @@
     </a>
     <div class="nav-links">
       <a href="../../">Apps</a>
-      <a href="./">Gmail Spotlight Indexer</a>
+      <a href="./">Spotlight Indexer for Gmail</a>
       <a href="privacy.html">Privacy</a>
     </div>
   </nav>
@@ -25,72 +25,99 @@
 
 <main>
   <section class="page-hero">
-    <span class="eyebrow">Gmail Spotlight Indexer</span>
+    <span class="eyebrow">Spotlight Indexer for Gmail</span>
     <h1>Support</h1>
-    <p class="lead">Help, troubleshooting, and support information</p>
+    <p class="lead">Help, troubleshooting, purchase guidance, and support information</p>
   </section>
 
   <section class="content">
     <article class="card">
       <h2>Contact Support</h2>
       <p>For questions, bug reports, or feature requests, contact:</p>
-      <p class="code-like"><a href="mailto:support@toybird.com?subject=Gmail%20Spotlight%20Indexer%20Support">support@toybird.com</a></p>
+      <p class="code-like"><a href="mailto:support@toybird.com?subject=Spotlight%20Indexer%20for%20Gmail%20Support">support@toybird.com</a></p>
       <p>Supported contact languages: Japanese and English.</p>
     </article>
 
     <article class="card">
       <h2>Basic Setup</h2>
       <ol>
-        <li>Open Gmail Spotlight Indexer on your Mac.</li>
+        <li>Open Spotlight Indexer for Gmail on your Mac.</li>
         <li>Click Add Gmail Account.</li>
         <li>Sign in on Google’s official sign-in page in your default browser.</li>
         <li>Approve the requested Gmail metadata permission.</li>
-        <li>Wait for the recent 30-day index to complete.</li>
+        <li>Wait for the most recent 30-day index to complete.</li>
         <li>Open macOS Spotlight and search for a subject, sender, recipient, label, or other indexed metadata.</li>
       </ol>
+    </article>
+
+    <article class="card">
+      <h2>Free Version and Full History Access</h2>
+      <p>The free version indexes metadata from the most recent 30 days for each connected Gmail account.</p>
+      <p>The optional <strong>Full History Access</strong> one-time in-app purchase unlocks 3 months, 6 months, 1 year, 2 years, and all-mail history options. It is a non-consumable purchase and does not require a subscription. The App Store displays the current price before purchase.</p>
+      <h3>How do I restore a purchase?</h3>
+      <p>Open <strong>Upgrade</strong> in the app and choose <strong>Restore Purchases</strong>. Use the same Apple ID that was used for the original purchase.</p>
+      <h3>How do I use an offer code?</h3>
+      <p>Open <strong>Upgrade</strong> and choose <strong>Redeem Offer Code</strong>. On supported macOS versions, the app displays Apple’s standard redemption sheet. On older supported versions, the app may open the App Store redemption page. Offer-code availability and validity are controlled by Apple.</p>
+      <h3>I redeemed a code, but access is still locked</h3>
+      <p>Return to the app and use <strong>Restore Purchases</strong>. Confirm that the Mac is signed in to the App Store with the Apple ID that redeemed the code.</p>
     </article>
 
     <article class="card">
       <h2>Account Settings</h2>
       <p>Settings are managed separately for each Gmail account.</p>
       <ul>
-        <li><strong>Index mail history:</strong> choose recent 30 days, 3 months, 6 months, 1 year, 2 years, or all mail.</li>
+        <li><strong>Index mail history:</strong> the free version supports the most recent 30 days. Full History Access unlocks 3 months, 6 months, 1 year, 2 years, and all mail.</li>
         <li><strong>Include Gmail snippets:</strong> optional and off by default. When enabled, Gmail’s short snippet may be included in Spotlight search for that account.</li>
-        <li><strong>Pause Sync:</strong> pause long-running indexing, especially when indexing all mail.</li>
+        <li><strong>Pause Sync:</strong> pause long-running indexing and resume it later.</li>
+        <li><strong>Rebuild Spotlight Index:</strong> recreate Spotlight items for the selected mailbox.</li>
         <li><strong>Remove Account:</strong> delete the account’s local metadata, saved tokens, and Spotlight index items from this Mac.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>General Settings</h2>
+      <ul>
+        <li><strong>Launch at Login:</strong> when enabled, the app starts in the background after you sign in to your Mac.</li>
+        <li><strong>Show in Menu Bar:</strong> show or hide the menu bar item. If hidden, reopen the app from Applications or macOS Spotlight to access its window and settings.</li>
+        <li><strong>Background Sync:</strong> allow periodic Gmail metadata syncing while the app is running.</li>
+        <li><strong>Language:</strong> choose the app’s display language.</li>
       </ul>
     </article>
 
     <article class="card">
       <h2>Troubleshooting</h2>
       <h3>Spotlight results do not appear</h3>
-      <p>Wait until the recent 30-day sync is complete, then try searching again. If results still do not appear, use Rebuild Spotlight Index in the app and allow macOS time to refresh Spotlight results.</p>
+      <p>Wait until the most recent 30-day sync is complete, then try searching again. If results still do not appear, use Rebuild Spotlight Index in the app and allow macOS time to refresh Spotlight results.</p>
 
       <h3>The result opens Gmail but shows the wrong account</h3>
       <p>Gmail results open in your default browser using the account email. Make sure the same Google account is signed in to Gmail in that browser.</p>
 
       <h3>Sync takes a long time</h3>
-      <p>Large mailboxes can take time, especially when Index mail history is set to All mail. You can pause sync, narrow the history range, and resume later.</p>
+      <p>Large mailboxes can take time, especially when Full History Access is active and the history range is set to All mail. You can pause sync, narrow the history range, and resume later.</p>
 
       <h3>Google sign-in does not complete</h3>
-      <p>Make sure you finish sign-in and permission approval on Google’s page. During testing or staged rollout, only approved test accounts may be able to complete Google sign-in.</p>
+      <p>Make sure you finish sign-in and permission approval on Google’s page. If Google limits access during verification or staged rollout, only approved test accounts may be able to complete sign-in.</p>
+
+      <h3>The purchase product or price does not appear</h3>
+      <p>Confirm that the Mac is connected to the internet and signed in to the App Store. App Store product availability can take time to update. Close and reopen the Upgrade screen, then try again.</p>
 
       <h3>I removed an account. Does it delete email from Gmail?</h3>
-      <p>No. Removing an account from Gmail Spotlight Indexer only deletes local app metadata, Keychain tokens, and Spotlight index items on your Mac. It does not delete or change your Gmail messages.</p>
+      <p>No. Removing an account from Spotlight Indexer for Gmail only deletes local app metadata, Keychain tokens, and Spotlight index items on your Mac. It does not delete or change your Gmail messages.</p>
     </article>
 
     <article class="card">
       <h2>Privacy and Data Handling</h2>
-      <p>Gmail Spotlight Indexer does not fetch full Gmail message bodies, does not download attachment files, and does not request permission to send, delete, or modify Gmail messages.</p>
-      <p><a href="privacy.html">Read the Gmail Spotlight Indexer Privacy Policy</a></p>
+      <p>Spotlight Indexer for Gmail does not fetch full Gmail message bodies, does not download attachment files, and does not request permission to send, delete, or modify Gmail messages.</p>
+      <p><a href="privacy.html">Read the Spotlight Indexer for Gmail Privacy Policy</a></p>
     </article>
 
     <article class="card">
       <h2>App Information</h2>
-      <p>App name: Gmail Spotlight Indexer</p>
+      <p>App name: Spotlight Indexer for Gmail</p>
       <p>Bundle ID: <span class="code-like">com.toybird.GmailSpotlightIndexer</span></p>
       <p>System requirement: macOS 13 or later</p>
-      <p class="muted">Gmail is a trademark of Google LLC. Gmail Spotlight Indexer is an independent Toybird Labs app and is not affiliated with, endorsed by, or sponsored by Google LLC.</p>
+      <p>Pricing model: free download with optional Full History Access one-time in-app purchase</p>
+      <p class="muted">Gmail is a trademark of Google LLC. Spotlight Indexer for Gmail is an independent Toybird Labs app and is not affiliated with, endorsed by, or sponsored by Google LLC.</p>
     </article>
   </section>
 </main>
@@ -99,7 +126,7 @@
   <div class="footer-inner">
     <span>© 2026 Toybird Labs</span>
     <span class="footer-links">
-      <a href="./">Gmail Spotlight Indexer</a>
+      <a href="./">Spotlight Indexer for Gmail</a>
       <a href="privacy.html">Privacy</a>
     </span>
   </div>
