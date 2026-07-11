@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Meet Here Card | Toybird Labs</title>
-  <meta name="description" content="Meet Here Cardは、写真に矢印や丸印、短い説明を追加し、待ち合わせ場所を分かりやすく共有できるiPhoneアプリです。">
+  <meta name="description" content="Meet Here Cardは、写真・地図・矢印・QRコード・ルート写真を組み合わせ、正確な待ち合わせ場所を分かりやすく伝えるiPhoneアプリです。">
   <link rel="stylesheet" href="../../../styles.css">
   <link rel="icon" href="../../../assets/meet-here-card-icon.png">
 </head>
@@ -30,8 +30,8 @@
       <div>
         <span class="eyebrow">iPhone向けユーティリティ</span>
         <h1>Meet Here Card</h1>
-        <p class="lead">待ち合わせ場所を、写真で分かりやすく。<br>
-        写真に矢印、丸印、短い説明を加えて、一枚の待ち合わせカードとして共有できます。</p>
+        <p class="lead">地図だけでは伝わらない、最後の数十メートルを分かりやすく。<br>
+        写真、矢印、地図、QRコード、順番案内のルート写真を、一枚の待ち合わせカードにまとめます。</p>
         <div class="button-row">
           <a class="button button-secondary" href="support.html">サポート</a>
           <a class="button button-secondary" href="privacy.html">プライバシーポリシー</a>
@@ -46,16 +46,28 @@
   <section class="section">
     <div class="grid">
       <article class="card">
-        <h3>場所を写真で直感的に伝える</h3>
-        <p>現地で撮影するか、写真ライブラリから画像を選びます。矢印、丸印、短いテキストを追加して、相手が見るべき場所を明確にできます。</p>
+        <h3>正確な場所を写真で示す</h3>
+        <p>現地で撮影するか、写真から画像を選びます。矢印、丸印、再編集できるテキスト、トリミング、モザイクを使って、見るべき場所を明確にできます。</p>
       </article>
       <article class="card">
-        <h3>一枚のカードに整理して共有</h3>
-        <p>場所名、待ち合わせ時刻、目印、任意の地図リンクを追加できます。共有前に完成カードを確認し、iOS標準の共有シートから送信できます。</p>
+        <h3>地図とQRコードを追加</h3>
+        <p>Appleマップで駅、施設、住所を検索し、地図上でピンを微調整できます。完成カードには地図画像、Appleマップリンク、QRコードを追加できます。</p>
       </article>
       <article class="card">
-        <h3>よく使う場所を再利用</h3>
-        <p>作成したカードは履歴へ保存できます。よく使う場所はお気に入りに登録し、複製して少しだけ修正することもできます。</p>
+        <h3>道順を写真で順番に案内</h3>
+        <p>最初の写真に最大3枚を追加し、合計4枚までの縦長ルートカードを作れます。方向アイコンと短い案内文で、入口までの流れを順番に伝えられます。</p>
+      </article>
+      <article class="card">
+        <h3>端末内の補助機能</h3>
+        <p>顔を検出してモザイク範囲を追加したり、看板の文字を認識したりできます。認識した文字は、注釈、場所名、目印、説明文に再利用できます。</p>
+      </article>
+      <article class="card">
+        <h3>写真アプリからすぐに開始</h3>
+        <p>iOS標準の共有シートから、選択した1枚の写真をMeet Here Cardへ送り、そのままアプリで編集を続けられます。</p>
+      </article>
+      <article class="card">
+        <h3>保存して繰り返し利用</h3>
+        <p>日付、時刻、目印、用途別テンプレートを追加できます。作成したカードは履歴やお気に入りへ保存し、次回は少し修正するだけで再利用できます。</p>
       </article>
     </div>
   </section>
@@ -63,8 +75,8 @@
   <section class="section-muted">
     <div class="inner">
       <h2>プライバシーを重視した設計</h2>
-      <p>写真、注釈、履歴、お気に入りは、iPhone端末内で処理・保存されます。アカウント登録は不要で、写真や待ち合わせ情報を開発者のサーバーへ送信しません。</p>
-      <p class="notice">広告SDK、解析SDK、追跡SDKは使用しません。データが共有先へ渡るのは、ユーザーがiOS標準の共有シートから明示的に送信先を選んだ場合だけです。</p>
+      <p>写真編集、顔検出、文字認識、カード生成、QRコード生成はiPhone端末内で処理されます。保存カードはアプリ専用の領域に保存され、共有機能から受け取った写真は、アプリへ取り込むまで端末内の共有領域に一時保存されます。</p>
+      <p class="notice">アカウント登録は不要です。広告SDK、解析SDK、追跡SDKは使用せず、写真や待ち合わせ情報を開発者のサーバーへアップロードしません。場所検索と地図画像には、地図機能を使用した場合に限りAppleマップのサービスを利用します。</p>
       <div class="button-row">
         <a class="button button-primary" href="support.html">サポートを見る</a>
         <a class="button button-secondary" href="privacy.html">プライバシーポリシーを見る</a>

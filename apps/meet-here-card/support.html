@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Meet Here Card Support | Toybird Labs</title>
-  <meta name="description" content="Support resources and frequently asked questions for Meet Here Card.">
+  <meta name="description" content="Support, usage instructions, and frequently asked questions for Meet Here Card 2.0.">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="icon" href="../../assets/meet-here-card-icon.png">
 </head>
@@ -28,7 +28,7 @@
   <section class="page-hero">
     <span class="eyebrow">Meet Here Card</span>
     <h1>Support</h1>
-    <p class="lead">Help, troubleshooting, and frequently asked questions</p>
+    <p class="lead">Help, troubleshooting, and frequently asked questions for version 2.0</p>
   </section>
 
   <section class="content">
@@ -36,31 +36,60 @@
       <h2>Contact Support</h2>
       <p>For questions, bug reports, or feature requests, contact:</p>
       <p class="code-like"><a href="mailto:support@toybird.com">support@toybird.com</a></p>
-      <p>Supported languages: Japanese and English.</p>
+      <p>Supported contact languages: Japanese and English.</p>
     </article>
 
     <article class="card">
       <h2>Basic Usage</h2>
       <ol>
-        <li>Tap <strong>Create New Card</strong>.</li>
-        <li>Take a photo or select one from the photo picker.</li>
-        <li>Add an arrow, circle, short text, or manual mosaic blur.</li>
-        <li>Add optional details such as the place name, time, landmark, and map link.</li>
-        <li>Preview the finished card and share it using the standard iOS share sheet.</li>
+        <li>Tap <strong>Create a New Card</strong>, then take a photo or select an image with the system photo picker.</li>
+        <li>Add arrows, circles, editable text, cropping, or manual mosaic. You can also choose face detection or text recognition when useful.</li>
+        <li>Optionally add up to three more photos, direction icons, and instructions for a route card with a maximum of four photos.</li>
+        <li>Add a place name, note, landmark, date, time, or a situation-based template.</li>
+        <li>Optionally search for a location with Apple Maps, adjust the pin, and add a map image, link, and QR code.</li>
+        <li>Preview the card, choose the card or annotated-photo output style, then share it with the standard iOS share sheet or save it to Photos.</li>
+      </ol>
+    </article>
+
+    <article class="card">
+      <h2>Importing from the Photos Share Sheet</h2>
+      <ol>
+        <li>Open Photos and select one image.</li>
+        <li>Tap Share and choose <strong>Meet Here Card</strong>.</li>
+        <li>If iOS opens Meet Here Card, continue editing the imported photo.</li>
+        <li>If the app does not open automatically, tap Done, then open Meet Here Card from the Home Screen. The pending photo will be imported when the app opens.</li>
       </ol>
     </article>
 
     <article class="card">
       <h2>Frequently Asked Questions</h2>
 
-      <h3>How do I change the size or direction of an annotation?</h3>
-      <p>Tap the arrow, circle, or text to select it. Drag with one finger to move it, pinch with two fingers to resize it, and rotate with two fingers to change its direction.</p>
+      <h3>How do I move, resize, rotate, or edit an annotation?</h3>
+      <p>Tap an arrow, circle, or text item to select it. Drag with one finger to move it, pinch with two fingers to resize it, and rotate with two fingers to change its direction. Select a text item and tap the edit control to change its wording.</p>
+
+      <h3>How do face detection and text recognition work?</h3>
+      <p>Face detection adds mosaic regions around recognizable faces. Text recognition lists text found in the image so you can reuse it as an annotation, title, landmark, or note. Both features run on device. Results depend on image quality, angle, lighting, and supported languages, so review the result before sharing.</p>
+
+      <h3>How many photos can a route card contain?</h3>
+      <p>A route card can contain the main edited photo plus up to three additional photos, for a total of four. Additional steps can be reordered, and each can include a direction icon and instruction.</p>
+
+      <h3>Do I have to allow location access?</h3>
+      <p>No. Location permission is requested only when you tap the current-location button in the map picker. Place search, map movement, and manual pin selection remain available without current-location permission.</p>
+
+      <h3>Does the app track my location?</h3>
+      <p>No. Meet Here Card does not continuously monitor your location and does not use location in the background. A selected location is stored only as part of the card on your device.</p>
+
+      <h3>Why is the map search or map image unavailable?</h3>
+      <p>Apple Maps search and map-image generation require an internet connection. Photo editing, annotations, on-device face detection, text recognition, saved cards, and QR-code generation do not require a developer server.</p>
+
+      <h3>When is a QR code added?</h3>
+      <p>A QR code is generated when the card has a valid Apple Maps location or a valid manual web link. The QR code opens that destination when scanned.</p>
 
       <h3>How do I crop the photo?</h3>
-      <p>Open the editor and tap Crop. Crop is for the photo itself. It is separate from resizing or rotating annotations.</p>
+      <p>Open the editor and tap Crop. Cropping changes the photo itself and is separate from resizing or rotating annotations.</p>
 
       <h3>How do I reuse a card?</h3>
-      <p>Open History or Favorites. You can share the saved card again or choose Duplicate and Edit to keep the original card while creating a modified copy.</p>
+      <p>Open History or Favorites. You can share a saved card again, edit it, or duplicate it when you want to preserve the original.</p>
 
       <h3>How do I delete my saved cards?</h3>
       <p>Delete an individual card from its detail screen, or open Settings and choose the option to delete all saved data.</p>
@@ -71,8 +100,8 @@
       <h3>Why can’t I save the finished card to Photos?</h3>
       <p>Open iPhone Settings → Privacy &amp; Security → Photos, then allow Meet Here Card to add photos. You can still use the share sheet even if you do not allow photo saving.</p>
 
-      <h3>Does the app track my location?</h3>
-      <p>No. The current version does not request location access. Map links are optional and added only when you enter or paste one.</p>
+      <h3>How do I change location permission?</h3>
+      <p>Open iPhone Settings → Privacy &amp; Security → Location Services → Meet Here Card. Current-location access is optional and is not needed for manual place search or pin selection.</p>
 
       <h3>Which languages are available in the app?</h3>
       <p>The app supports Japanese, English, Simplified Chinese, Traditional Chinese, Korean, Spanish, French, German, Italian, and Brazilian Portuguese.</p>
