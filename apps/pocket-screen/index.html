@@ -4,7 +4,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pocket Screen | Toybird Labs</title>
-  <meta name="description" content="Pocket Screen is a macOS menu bar app that shows the frontmost window in a small always-on-top PiP-style reference window.">
+  <meta name="description" content="Pocket Screen is a macOS menu bar app that keeps up to two windows visible as compact, always-on-top PiP-style reference views.">
+  <style>
+    .producthunt-award {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 14px;
+      padding: 7px 11px 7px 8px;
+      color: #3a2a26;
+      background: #fff;
+      border: 1px solid #e7d8d2;
+      border-radius: 11px;
+      box-shadow: 0 7px 18px rgba(71, 42, 32, .08);
+      line-height: 1.15;
+    }
+    .producthunt-award:hover {
+      text-decoration: none;
+      border-color: #da9f8b;
+      transform: translateY(-1px);
+    }
+    .producthunt-award-mark {
+      display: grid;
+      place-items: center;
+      flex: 0 0 30px;
+      width: 30px;
+      height: 30px;
+      color: #fff;
+      background: #da552f;
+      border-radius: 50%;
+      font-size: 18px;
+      font-weight: 800;
+      font-family: Arial, sans-serif;
+    }
+    .producthunt-award-copy {
+      display: grid;
+      gap: 2px;
+    }
+    .producthunt-award-copy small {
+      color: #8a6a60;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+    .producthunt-award-copy strong {
+      font-size: 13px;
+      font-weight: 800;
+    }
+  </style>
   <link rel="stylesheet" href="../../styles.css">
   <link rel="icon" href="../../assets/pocket-screen-icon.png">
 </head>
@@ -29,8 +76,15 @@
       <div>
         <span class="eyebrow">macOS menu bar utility</span>
         <h1>Pocket Screen</h1>
-        <p class="lead">Keep one window visible while working somewhere else.<br>
-        Pocket Screen turns the current frontmost window into a small always-on-top PiP-style reference window on your Mac.</p>
+        <p class="lead">Keep up to two windows visible while working somewhere else.<br>
+        Pocket Screen turns the current frontmost window into a compact, always-on-top PiP-style reference view. Add a second view when needed, then switch the selected PiP to the current frontmost window with the global shortcut.</p>
+        <a class="producthunt-award" href="https://www.producthunt.com/products/toybird-labs?launch=pocket-screen" target="_blank" rel="noopener noreferrer" aria-label="Pocket Screen was number 4 Product of the Day on Product Hunt">
+          <span class="producthunt-award-mark" aria-hidden="true">P</span>
+          <span class="producthunt-award-copy">
+            <small>PRODUCT HUNT</small>
+            <strong>#4 Product of the Day</strong>
+          </span>
+        </a>
         <div class="button-row">
           <a class="button button-secondary" href="support.html">Support</a>
           <a class="button button-secondary" href="privacy.html">Privacy Policy</a>
@@ -45,28 +99,28 @@
   <section class="section">
     <div class="grid">
       <article class="card">
-        <h3>Reference another window</h3>
-        <p>Pin a browser, document, video, dashboard, or any supported window as a compact reference view while you work in another app.</p>
+        <h3>Up to two reference views</h3>
+        <p>Keep one or two independent browser, document, video, chat, dashboard, or other supported windows visible while you work in another app.</p>
       </article>
       <article class="card">
-        <h3>Always-on-top PiP window</h3>
-        <p>The floating window stays above your workspace, can be moved and resized, and remembers its position for everyday use.</p>
+        <h3>Instant target switching</h3>
+        <p>The global shortcut (Option-Command-P by default) creates the first PiP, then switches the selected PiP to the current frontmost window. Add the second PiP from the menu bar or Settings.</p>
       </article>
       <article class="card">
-        <h3>Quick keyboard control</h3>
-        <p>Use the global shortcut to start or stop Pocket Screen without interrupting your current workflow. The shortcut can be changed in Settings.</p>
+        <h3>Selected-PiP controls</h3>
+        <p>Click or move a PiP to select it. Its accent border shows which view will be switched, frozen, or made click-through.</p>
       </article>
       <article class="card">
-        <h3>Built for live content</h3>
-        <p>Pocket Screen uses macOS ScreenCaptureKit to mirror the selected window continuously, including browser video and other changing content.</p>
+        <h3>Move, resize, and remember</h3>
+        <p>Each always-on-top view can be moved, resized, and snapped near screen edges. Pocket Screen stores the position of each PiP separately.</p>
       </article>
       <article class="card">
-        <h3>Space-aware behavior</h3>
-        <p>When you switch away from the Space that contains the source window, Pocket Screen hides the PiP window and restores it when you return.</p>
+        <h3>Live content, processed locally</h3>
+        <p>Pocket Screen uses macOS ScreenCaptureKit to mirror selected windows continuously, including video and other changing content. Captured pixels stay on your Mac.</p>
       </article>
       <article class="card">
-        <h3>Local-only display</h3>
-        <p>The captured window image is displayed locally inside Pocket Screen. The app does not upload captured pixels or send them to external servers.</p>
+        <h3>Space- and display-aware</h3>
+        <p>PiPs hide when their source Space is inactive and return when you come back. Placement is preserved across target changes and kept on-screen after display changes.</p>
       </article>
     </div>
   </section>
@@ -75,10 +129,11 @@
     <div class="inner">
       <h2>How it works</h2>
       <ol>
-        <li>Bring the window you want to keep visible to the front.</li>
-        <li>Choose Pocket Screen from the menu bar or press the configured shortcut.</li>
-        <li>Move or resize the floating PiP window as needed.</li>
-        <li>Press the shortcut again or use the menu bar to stop.</li>
+        <li>Bring the first window you want to keep visible to the front.</li>
+        <li>Press the configured global shortcut or use the menu bar to create the first PiP.</li>
+        <li>Add a second PiP from the menu bar or Settings when you need another reference view.</li>
+        <li>Click or move a PiP to select it, then press the shortcut to switch that PiP to the current frontmost window.</li>
+        <li>Move, resize, freeze, or make the selected PiP click-through. Stop individual PiPs or all PiPs from the menu bar.</li>
       </ol>
       <p class="notice">Pocket Screen requires macOS Screen Recording permission so it can capture the selected window. Captured content is used only for the local PiP preview.</p>
       <div class="button-row">
