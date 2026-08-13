@@ -51,6 +51,19 @@
       font-size: 13px;
       font-weight: 800;
     }
+    .award-row {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .award-row .producthunt-award {
+      margin-top: 0;
+    }
+    .smolstartup-award img {
+      display: block;
+    }
   </style>
   <link rel="stylesheet" href="../../styles.css">
   <link rel="icon" href="../../assets/pocket-screen-icon.png">
@@ -78,13 +91,22 @@
         <h1>Pocket Screen</h1>
         <p class="lead">Keep up to two windows visible while working somewhere else.<br>
         Pocket Screen turns the current frontmost window into a compact, always-on-top PiP-style reference view. Add a second view when needed, then switch the selected PiP to the current frontmost window with the global shortcut.</p>
-        <a class="producthunt-award" href="https://www.producthunt.com/products/toybird-labs?launch=pocket-screen" target="_blank" rel="noopener noreferrer" aria-label="Pocket Screen was number 4 Product of the Day on Product Hunt">
-          <span class="producthunt-award-mark" aria-hidden="true">P</span>
-          <span class="producthunt-award-copy">
-            <small>PRODUCT HUNT</small>
-            <strong>#4 Product of the Day</strong>
-          </span>
-        </a>
+        <div class="award-row">
+          <a class="producthunt-award" href="https://www.producthunt.com/products/toybird-labs?launch=pocket-screen" target="_blank" rel="noopener noreferrer" aria-label="Pocket Screen was number 4 Product of the Day on Product Hunt">
+            <span class="producthunt-award-mark" aria-hidden="true">P</span>
+            <span class="producthunt-award-copy">
+              <small>PRODUCT HUNT</small>
+              <strong>#4 Product of the Day</strong>
+            </span>
+          </a>
+          <a class="smolstartup-award" href="https://smolstartup.com/projects/pocket-screen" target="_blank" title="Smol Startup Top 3 Daily Winner">
+            <img 
+              src="https://r2.direasy-multi-tenant.focusapps.app/uploads/616d0b1a-3979-4b8c-94d1-b4f1fedd3ead/1783046775816/iwwixene3dh/top2-dark.svg" 
+              alt="Smol Startup Top 3 Daily Winner" 
+              style="width: 195px; height: auto;" 
+            />
+          </a>
+        </div>
         <div class="button-row">
           <a class="button button-secondary" href="support.html">Support</a>
           <a class="button button-secondary" href="privacy.html">Privacy Policy</a>
