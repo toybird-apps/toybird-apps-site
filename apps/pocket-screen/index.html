@@ -126,11 +126,19 @@
       </article>
       <article class="card">
         <h3>Instant target switching</h3>
-        <p>The global shortcut (Option-Command-P by default) creates the first PiP, then switches the selected PiP to the current frontmost window. Add the second PiP from the menu bar or Settings.</p>
+        <p>The global shortcut (Option-Command-P by default) creates the first PiP, then switches the selected PiP to the current frontmost window. Add Another PiP and Close Selected PiP also have configurable global shortcuts.</p>
       </article>
       <article class="card">
-        <h3>Selected-PiP controls</h3>
-        <p>Click or move a PiP to select it. Its accent border shows which view will be switched, frozen, or made click-through.</p>
+        <h3>Focus View</h3>
+        <p>Select a region inside a PiP and expand just that area to fill the view. Each PiP keeps its own Focus View state.</p>
+      </article>
+      <article class="card">
+        <h3>Per-PiP controls</h3>
+        <p>Each active PiP can have its own opacity and Update Quality, along with independent Freeze and Click-Through controls.</p>
+      </article>
+      <article class="card">
+        <h3>Temporary Hide</h3>
+        <p>Temporarily hide all PiPs with Shift plus the primary shortcut, then restore them without losing their source, position, Focus View, freeze, click-through, opacity, or quality state.</p>
       </article>
       <article class="card">
         <h3>Move, resize, and remember</h3>
@@ -142,7 +150,11 @@
       </article>
       <article class="card">
         <h3>Space- and display-aware</h3>
-        <p>PiPs hide when their source Space is inactive and return when you come back. Placement is preserved across target changes and kept on-screen after display changes.</p>
+        <p>PiPs hide when their source Space is unavailable and return when the source becomes available again. Placement is preserved across target and display changes.</p>
+      </article>
+      <article class="card">
+        <h3>Optional capture exclusion on macOS 26+</h3>
+        <p>On macOS 26 or later, an optional setting can ask macOS to exclude PiP windows from supported screenshots, screen recordings, and screen sharing. The setting is off by default.</p>
       </article>
     </div>
   </section>
@@ -153,9 +165,9 @@
       <ol>
         <li>Bring the first window you want to keep visible to the front.</li>
         <li>Press the configured global shortcut or use the menu bar to create the first PiP.</li>
-        <li>Add a second PiP from the menu bar or Settings when you need another reference view.</li>
-        <li>Click or move a PiP to select it, then press the shortcut to switch that PiP to the current frontmost window.</li>
-        <li>Move, resize, freeze, or make the selected PiP click-through. Stop individual PiPs or all PiPs from the menu bar.</li>
+        <li>Add a second PiP from the menu bar, Settings, or the configured Add Another PiP shortcut when you need another reference view.</li>
+        <li>Click or move a PiP to select it, then press the primary shortcut to switch that PiP to the current frontmost window.</li>
+        <li>Use Focus View, opacity, Update Quality, Freeze, or Click-Through as needed. Shift plus the primary shortcut temporarily hides or restores all PiPs.</li>
       </ol>
       <p class="notice">Pocket Screen requires macOS Screen Recording permission so it can capture the selected window. Captured content is used only for the local PiP preview.</p>
       <div class="button-row">

@@ -41,11 +41,11 @@
     <article class="card">
       <h2>Basic Usage</h2>
       <ol>
-        <li>Open Pocket Screen from the menu bar.</li>
-        <li>Bring the window you want to keep visible to the front.</li>
-        <li>Start Pocket Screen from the menu bar or by pressing the configured shortcut.</li>
-        <li>Move or resize the PiP window as needed.</li>
-        <li>Stop Pocket Screen from the menu bar or by pressing the shortcut again.</li>
+        <li>Bring the first window you want to keep visible to the front.</li>
+        <li>Press the primary global shortcut (Option-Command-P by default) or use the menu bar to create the first PiP.</li>
+        <li>To add a second view, use Add Another PiP from the menu or its configured shortcut (Option-Command-2 by default).</li>
+        <li>Click or move a PiP to select it. Press the primary shortcut to switch the selected PiP to the current frontmost window.</li>
+        <li>Close the selected PiP from the menu or its configured shortcut (Option-Command-X by default), or stop all PiPs from the menu.</li>
       </ol>
     </article>
 
@@ -62,8 +62,26 @@
 
     <article class="card">
       <h2>Space and Full-Screen Behavior</h2>
-      <p>If the source window is on another Desktop or Space, Pocket Screen may hide the PiP window until you return to the Space that contains the source window. This avoids showing a black or stale preview.</p>
-      <p>For the most stable result, keep the source window and Pocket Screen on the same Space when you want to watch live content continuously.</p>
+      <p>If the source window becomes unavailable from the current Desktop or Space, Pocket Screen can temporarily hide that PiP instead of showing a black or stale preview. It restores the PiP when the source is available again.</p>
+      <p>Pocket Screen also includes recovery behavior for display changes, sleep/wake, Space restoration, and supported full-screen or Stage Manager transitions.</p>
+    </article>
+
+
+    <article class="card">
+      <h2>Focus View, Opacity, and Update Quality</h2>
+      <p><strong>Focus View</strong> lets you select a region inside the source and expand that region to fill the PiP. Return to the full-window view from the PiP controls or menu.</p>
+      <p>Opacity and Update Quality can be adjusted independently for each active PiP. Update Quality presets are Energy Saver (up to 1920 px / 10 fps), Standard (up to 2560 px / 20 fps), and Smooth (up to 3200 px / 30 fps).</p>
+    </article>
+
+    <article class="card">
+      <h2>Temporary Hide and Global Shortcuts</h2>
+      <p>Press Shift plus the selected primary shortcut to temporarily hide or restore all PiPs without losing their current state.</p>
+      <p>Add Another PiP and Close Selected PiP each have a configurable shortcut in Settings and can also be disabled.</p>
+    </article>
+
+    <article class="card">
+      <h2>Exclude PiP from Screen Capture</h2>
+      <p>On macOS 26 or later, Settings includes an optional <strong>Exclude PiP from Screen Capture</strong> toggle. When enabled, Pocket Screen asks macOS to exclude PiP windows from supported screenshots, screen recordings, and screen sharing. The setting is off by default.</p>
     </article>
 
     <article class="card">

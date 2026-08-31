@@ -6,7 +6,7 @@
   <title>Pointer Cue Support | Toybird Labs</title>
   <meta name="description" content="Support resources and frequently asked questions for Pointer Cue.">
   <link rel="stylesheet" href="../../styles.css">
-  <link rel="icon" href="../../assets/logo.svg">
+  <link rel="icon" href="../../assets/pointer-cue-icon.png">
 </head>
 <body>
 <header class="site-header">
@@ -44,7 +44,16 @@
       <p>Open System Settings → Privacy &amp; Security → Input Monitoring, enable Pointer Cue, then quit and reopen the app.</p>
 
       <h3>How do I outline an area?</h3>
-      <p>Hold the Command key and left-drag. Pointer Cue draws a temporary rectangle without interacting with the app behind it.</p>
+      <p>From Range Selection in the menu bar, choose Command + Drag, Control + Command + Drag, Option + Command + Drag, or Off. Hold the selected shortcut and left-drag to draw a temporary rectangle. The rectangle gradually fades out.</p>
+
+      <h3>How does Focus Cue work?</h3>
+      <p>Enable Highlight Active Window. The active top-level window remains clear while the rest of that display's usable area is covered by a 50% translucent white mask. Masked areas remain fully operable, and the menu bar and Dock stay clear.</p>
+
+      <h3>What happens with multiple displays?</h3>
+      <p>Focus Cue applies only to the display containing the active window. Other displays remain unmasked. If an active window spans displays, Focus Cue applies only to displays containing that window.</p>
+
+      <h3>Does Focus Cue follow window switching?</h3>
+      <p>Yes. It follows normal macOS switching and selection, including Command + Tab, window cycling, clicks, Dock, Stage Manager, Mission Control, and Finder Quick Look. During a move or resize, the mask temporarily disappears and returns at the final stable position.</p>
 
       <h3>How do I change the cue color?</h3>
       <p>Open the Pointer Cue menu-bar item and choose a preset or custom color from the Color submenu.</p>
@@ -55,8 +64,11 @@
       <h3>How do I turn off Launch at Login?</h3>
       <p>Open the Pointer Cue menu-bar item and disable Launch at Login.</p>
 
+      <h3>Does Pointer Cue need Screen Recording permission?</h3>
+      <p>No. Pointer Cue does not capture or transmit your screen content. Input Monitoring is used only for the local key and mouse state needed by its cue gestures.</p>
+
       <h3>Which macOS versions are supported?</h3>
-      <p>Pointer Cue is designed for macOS Sequoia 15.6 or later.</p>
+      <p>Pointer Cue supports macOS 13.5 or later.</p>
     </article>
 
     <article class="card">

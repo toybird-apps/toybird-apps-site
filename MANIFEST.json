@@ -3,7 +3,7 @@
   "app_ads_lines": [
     "google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0"
   ],
-  "relative_links_checked": 1125,
+  "relative_links_checked": 1126,
   "broken_relative_links": [],
   "gmail_spotlight_indexer_pages": [
     "apps/gmail-spotlight-indexer/index.html",
@@ -113,6 +113,7 @@
     "assets/meet-here-card-icon.png",
     "assets/meeting-ready-icon.png",
     "assets/pocket-screen-icon.png",
+    "assets/pointer-cue-icon.png",
     "assets/prompt-ready-icon.png",
     "assets/qbr-survival-hero.png",
     "assets/qbr-survival-icon.png",
