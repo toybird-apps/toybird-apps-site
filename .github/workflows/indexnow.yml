@@ -50,7 +50,6 @@ jobs:
               parts = line.split("\t")
               if len(parts) < 2:
                   continue
-              status = parts[0]
               paths = parts[1:]
               for path in paths:
                   if path in trigger_paths:
@@ -127,3 +126,5 @@ jobs:
             https://api.indexnow.org/indexnow
           echo
           echo "IndexNow submission completed."
+
+# Updating this workflow intentionally triggers one full sitemap submission.
