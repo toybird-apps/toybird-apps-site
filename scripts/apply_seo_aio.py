@@ -51,6 +51,14 @@ JSONLD_RE = re.compile(
     r"<script\b[^>]*type=[\"']application/ld\+json[\"'][^>]*>(.*?)</script>",
     re.I | re.S,
 )
+OG_META_RE = re.compile(
+    r"<meta\b(?=[^>]*\bproperty=[\"']og:(?:title|description|url|type|site_name|image)[\"'])[^>]*>\s*",
+    re.I,
+)
+HREFLANG_RE = re.compile(
+    r"<link\b(?=[^>]*\brel=[\"']alternate[\"'])(?=[^>]*\bhreflang=[\"'][^\"']+[\"'])[^>]*>\s*",
+    re.I,
+)
 
 
 def strip_tags(value: str) -> str:
@@ -138,7 +146,7 @@ def landing_paths_from_sitemap() -> list[tuple[Path, str]]:
     return result
 
 
-def localized_links(path: Path, canonical: str) -> list[str]:
+def localized_links(path: Path) -> list[str]:
     parts = path.parts
     if not parts or parts[0] != "apps":
         return []
@@ -177,7 +185,7 @@ def managed_meta_block(path: Path, text: str, canonical: str) -> str:
     ]
     if path != Path("index.html") and icon:
         lines.append(f'<meta property="og:image" content="{html.escape(icon, quote=True)}">')
-    lines.extend(localized_links(path, canonical))
+    lines.extend(localized_links(path))
     lines.append(MANAGED_META_END)
     return "\n".join(lines)
 
@@ -273,9 +281,11 @@ def update_page(path: Path, canonical: str) -> bool:
 
     text = ensure_canonical(text, canonical)
 
-    # Remove only blocks owned by this script; existing hand-authored metadata stays intact.
+    # Rebuild only the hidden metadata that this normalization owns.
     text = remove_managed_block(text, MANAGED_META_START, MANAGED_META_END)
     text = remove_managed_block(text, MANAGED_SCHEMA_START, MANAGED_SCHEMA_END)
+    text = OG_META_RE.sub("", text)
+    text = HREFLANG_RE.sub("", text)
 
     # If the page already has a hand-authored SoftwareApplication block, enrich it in place.
     if path != Path("index.html"):
