@@ -1,0 +1,129 @@
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  notify-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build changed URL list
+        id: urls
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          INDEXNOW_KEY: 2f658b183e348ab9d5c1475496b7bd7e
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import subprocess
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          base = "https://labs.toybird.com/"
+          before = os.environ.get("BEFORE", "")
+          after = os.environ.get("AFTER", "HEAD")
+          if not before or set(before) == {"0"}:
+              before = subprocess.check_output(["git", "rev-parse", "HEAD^"], text=True).strip()
+
+          diff = subprocess.check_output(
+              ["git", "diff", "--name-status", before, after], text=True
+          )
+          changed = []
+          full_submit = False
+          trigger_paths = {
+              ".github/workflows/indexnow.yml",
+              f"{os.environ['INDEXNOW_KEY']}.txt",
+          }
+
+          for line in diff.splitlines():
+              parts = line.split("\t")
+              if len(parts) < 2:
+                  continue
+              status = parts[0]
+              paths = parts[1:]
+              for path in paths:
+                  if path in trigger_paths:
+                      full_submit = True
+                  if path == "sitemap.xml" and not any(p.endswith("index.html") for p in paths):
+                      full_submit = True
+                  if path == "index.html":
+                      changed.append(base)
+                  elif path.startswith("apps/") and path.endswith("/index.html"):
+                      rel = path[:-len("index.html")]
+                      changed.append(base + rel)
+
+          if full_submit:
+              tree = ET.parse("sitemap.xml")
+              ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+              changed = [
+                  n.text.strip()
+                  for n in tree.findall(".//sm:loc", ns)
+                  if n.text and n.text.strip().startswith(base)
+              ]
+
+          urls = sorted(set(changed))
+          Path("/tmp/indexnow-urls.json").write_text(
+              json.dumps(urls, ensure_ascii=False), encoding="utf-8"
+          )
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write(f"count={len(urls)}\n")
+          print(f"IndexNow URLs: {len(urls)}")
+          for url in urls:
+              print(url)
+          PY
+
+      - name: Wait for IndexNow key to be published
+        if: steps.urls.outputs.count != '0'
+        env:
+          INDEXNOW_KEY: 2f658b183e348ab9d5c1475496b7bd7e
+        run: |
+          set -e
+          KEY_URL="https://labs.toybird.com/${INDEXNOW_KEY}.txt"
+          for attempt in $(seq 1 24); do
+            body="$(curl -fsSL "$KEY_URL" 2>/dev/null || true)"
+            if [ "$body" = "$INDEXNOW_KEY" ]; then
+              echo "IndexNow key is publicly reachable."
+              exit 0
+            fi
+            echo "Waiting for GitHub Pages to publish the key ($attempt/24)..."
+            sleep 5
+          done
+          echo "IndexNow key was not reachable after 120 seconds."
+          exit 1
+
+      - name: Submit URLs to IndexNow
+        if: steps.urls.outputs.count != '0'
+        env:
+          INDEXNOW_KEY: 2f658b183e348ab9d5c1475496b7bd7e
+        run: |
+          python3 - <<'PY' > /tmp/indexnow-payload.json
+          import json
+          import os
+          from pathlib import Path
+
+          urls = json.loads(Path("/tmp/indexnow-urls.json").read_text(encoding="utf-8"))
+          print(json.dumps({
+              "host": "labs.toybird.com",
+              "key": os.environ["INDEXNOW_KEY"],
+              "keyLocation": f"https://labs.toybird.com/{os.environ['INDEXNOW_KEY']}.txt",
+              "urlList": urls,
+          }, ensure_ascii=False))
+          PY
+          curl --fail-with-body --show-error --silent \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -X POST \
+            --data-binary @/tmp/indexnow-payload.json \
+            https://api.indexnow.org/indexnow
+          echo
+          echo "IndexNow submission completed."
