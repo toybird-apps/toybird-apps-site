@@ -18,6 +18,18 @@ import xml.etree.ElementTree as ET
 BASE_URL = "https://labs.toybird.com/"
 SITEMAP = Path("sitemap.xml")
 
+LOCALE_MAP = {"en": "en_US", "ja": "ja_JP"}
+SOCIAL_IMAGE_OVERRIDES = {
+    "index.html": "https://labs.toybird.com/assets/toybird-labs-og.png",
+    "apps/pocket-screen/index.html": "https://lp.toybird.com/pocket-screen/assets/og-image.png",
+    "apps/pointer-cue/index.html": "https://lp.toybird.com/pointer-cue/assets/og-image.png",
+    "apps/ai-memorize-sheet/index.html": "https://lp.toybird.com/shared/ai-study-sheet-v3/en-overview.png",
+    "apps/ai-memorize-sheet/ja/index.html": "https://lp.toybird.com/shared/ai-study-sheet-v3/ja-overview.png",
+    "apps/prompt-ready/index.html": "https://lp.toybird.com/prompt-ready/assets/og-image.png",
+    "apps/prompt-ready/ja/index.html": "https://lp.toybird.com/prompt-ready/assets/og-image.png",
+    "apps/koesub/index.html": "https://labs.toybird.com/assets/koesub-og.png",
+}
+
 HOME_TITLE = "Toybird Labs | Productivity Apps for macOS, iPhone & iPad"
 HOME_DESCRIPTION = (
     "Toybird Labs creates useful macOS, iPhone, and iPad apps for productivity, "
@@ -175,6 +187,12 @@ def managed_meta_block(path: Path, text: str, canonical: str) -> str:
     title = get_title(text)
     description = get_meta_description(text)
     icon = get_icon_url(text, canonical)
+    lang = get_lang(text)
+    locale = LOCALE_MAP.get(lang, lang.replace("-", "_"))
+    image = SOCIAL_IMAGE_OVERRIDES.get(path.as_posix(), icon)
+    image_alt = get_h1(text) or title.split(" | ", 1)[0] or "Toybird Labs"
+    if path == Path("index.html"):
+        image_alt = "Toybird Labs apps and products"
     lines = [
         MANAGED_META_START,
         f'<meta property="og:title" content="{html.escape(title, quote=True)}">',
@@ -182,9 +200,11 @@ def managed_meta_block(path: Path, text: str, canonical: str) -> str:
         f'<meta property="og:url" content="{html.escape(canonical, quote=True)}">',
         '<meta property="og:type" content="website">',
         '<meta property="og:site_name" content="Toybird Labs">',
+        f'<meta property="og:locale" content="{html.escape(locale, quote=True)}">',
     ]
-    if path != Path("index.html") and icon:
-        lines.append(f'<meta property="og:image" content="{html.escape(icon, quote=True)}">')
+    if image:
+        lines.append(f'<meta property="og:image" content="{html.escape(image, quote=True)}">')
+        lines.append(f'<meta property="og:image:alt" content="{html.escape(image_alt, quote=True)}">')
     lines.extend(localized_links(path))
     lines.append(MANAGED_META_END)
     return "\n".join(lines)
