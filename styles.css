@@ -75,3 +75,9 @@
   .grid{grid-template-columns:1fr;gap:14px}
   .card{padding:18px}
 }
+
+
+/* Toyceipt Collection */
+.toyceipt-hero-showcase{padding:14px;overflow:hidden;background:linear-gradient(145deg,#eaf6ff,#fff0f7)}
+.toyceipt-hero-showcase img{display:block;width:100%;max-width:none;height:auto;border-radius:16px;box-shadow:none}
+@media(max-width:780px){.toyceipt-hero-showcase{min-height:0;padding:10px}.toyceipt-hero-showcase img{width:100%;border-radius:12px}}
