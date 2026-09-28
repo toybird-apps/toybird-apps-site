@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Toyceipt Collection icon">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#79c7f4"/><stop offset="1" stop-color="#dff4ff"/></linearGradient>
+  <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9f6bc"/><stop offset="1" stop-color="#bce59e"/></linearGradient>
+  <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#ffe9d5"/></linearGradient>
+  <filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#527aa1" flood-opacity=".22"/></filter>
+</defs>
+<rect width="512" height="512" rx="108" fill="url(#sky)"/>
+<path d="M0 366 C120 330 240 350 512 330 L512 512 L0 512 Z" fill="url(#grass)"/>
+<g opacity=".94" filter="url(#s)">
+  <g transform="translate(78 65) rotate(-8 105 115)">
+    <path d="M12 22 30 12 45 22 62 12 78 22 95 12 112 22 129 12 146 22 164 12 188 25 192 220 18 220Z" fill="#eaf3ff" stroke="#6694cb" stroke-width="7"/>
+    <rect x="42" y="72" width="88" height="13" rx="7" fill="#78a6d8"/><rect x="42" y="100" width="108" height="13" rx="7" fill="#78a6d8"/><rect x="42" y="128" width="70" height="13" rx="7" fill="#78a6d8"/>
+  </g>
+  <g transform="translate(270 62) rotate(8 105 115)">
+    <path d="M12 22 30 12 45 22 62 12 78 22 95 12 112 22 129 12 146 22 164 12 188 25 192 220 18 220Z" fill="#eee8ff" stroke="#9677cf" stroke-width="7"/>
+    <rect x="40" y="72" width="88" height="13" rx="7" fill="#9e82cf"/><rect x="40" y="100" width="108" height="13" rx="7" fill="#9e82cf"/><path d="m151 64 8 17 19 2-14 13 4 19-17-9-17 9 4-19-14-13 19-2z" fill="#9270c8"/>
+  </g>
+</g>
+<g filter="url(#s)">
+  <path d="M168 245 C185 199 241 174 296 183 C351 191 384 230 382 283 C380 349 326 390 255 390 C180 390 130 351 132 289 C133 270 145 254 168 245Z" fill="url(#cream)" stroke="#58342a" stroke-width="8"/>
+  <ellipse cx="148" cy="292" rx="22" ry="39" fill="#ffe8d7" stroke="#58342a" stroke-width="6"/><ellipse cx="366" cy="292" rx="22" ry="39" fill="#ffe8d7" stroke="#58342a" stroke-width="6"/>
+  <circle cx="218" cy="292" r="14" fill="#351912"/><circle cx="300" cy="292" r="14" fill="#351912"/>
+  <path d="M246 306 q11 16 22 0 q11 16 22 0" fill="none" stroke="#351912" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="196" cy="326" r="17" fill="#ff9bab"/><circle cx="322" cy="326" r="17" fill="#ff9bab"/>
+  <ellipse cx="230" cy="230" rx="28" ry="13" fill="#fff" opacity=".72" transform="rotate(-32 230 230)"/>
+</g>
+<g filter="url(#s)" transform="translate(38 275)">
+  <path d="M72 0 C115 36 135 73 128 115 C121 158 89 179 52 175 C16 171 -5 145 2 111 C8 82 31 60 49 48 C59 40 65 21 72 0Z" fill="#8bdcff" stroke="#317cb0" stroke-width="6"/>
+  <circle cx="48" cy="106" r="8" fill="#351912"/><circle cx="91" cy="106" r="8" fill="#351912"/><path d="M62 116 q7 10 14 0 q7 10 14 0" fill="none" stroke="#351912" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g filter="url(#s)" transform="translate(358 283)">
+  <path d="M40 40 C54 7 97 -7 129 8 C164 25 176 61 164 94 C151 130 117 145 80 137 C43 129 19 103 22 72 C24 58 29 49 40 40Z" fill="#a5ee9e" stroke="#3a9043" stroke-width="6"/>
+  <path d="M126 20 C159 -16 205 2 209 46 C214 91 186 128 149 135 C161 100 159 63 144 38Z" fill="#9be995" stroke="#3a9043" stroke-width="6"/>
+  <circle cx="76" cy="73" r="8" fill="#351912"/><circle cx="121" cy="73" r="8" fill="#351912"/><path d="M89 84 q7 10 14 0 q7 10 14 0" fill="none" stroke="#351912" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g fill="#fff59b"><path d="M56 106 64 124 84 126 69 139 73 158 56 148 39 158 43 139 28 126 48 124Z"/><path d="M447 108 454 124 471 126 458 138 462 155 447 146 432 155 436 138 423 126 440 124Z"/></g>
+</svg>
