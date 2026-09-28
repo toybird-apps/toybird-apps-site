@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Pastel receipts and cute Pals">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dff3ff"/><stop offset=".48" stop-color="#e8e8ff"/><stop offset="1" stop-color="#ffe9f2"/></linearGradient>
+  <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffdfa"/><stop offset="1" stop-color="#ffe9d8"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c9f2ff"/><stop offset="1" stop-color="#72cfff"/></linearGradient>
+  <linearGradient id="green" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ddffd8"/><stop offset="1" stop-color="#83e783"/></linearGradient>
+  <linearGradient id="yellow" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffbd6"/><stop offset="1" stop-color="#ffd97a"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#8090c0" flood-opacity=".22"/></filter>
+</defs>
+<rect width="1600" height="900" rx="64" fill="url(#bg)"/>
+<g filter="url(#shadow)" opacity=".92">
+  <g transform="translate(365 105) rotate(-8 210 210)">
+    <path d="M40 38 L78 20 L108 38 L142 20 L174 38 L208 20 L240 38 L274 20 L308 38 L342 20 L382 42 L392 480 Q392 520 352 520 L70 520 Q28 520 28 478 Z" fill="#fff" opacity=".88"/>
+    <rect x="90" y="145" width="210" height="30" rx="15" fill="#a9c5ee"/><rect x="90" y="205" width="255" height="30" rx="15" fill="#a9c5ee"/><rect x="90" y="265" width="165" height="30" rx="15" fill="#a9c5ee"/>
+    <circle cx="330" cy="105" r="34" fill="#bfd1ec"/><circle cx="330" cy="105" r="21" fill="#94b4e2"/>
+  </g>
+  <g transform="translate(825 95) rotate(8 210 210)">
+    <path d="M40 38 L78 20 L108 38 L142 20 L174 38 L208 20 L240 38 L274 20 L308 38 L342 20 L382 42 L392 480 Q392 520 352 520 L70 520 Q28 520 28 478 Z" fill="#fff7ff" opacity=".9"/>
+    <rect x="78" y="150" width="210" height="30" rx="15" fill="#c5a5ec"/><rect x="78" y="210" width="250" height="30" rx="15" fill="#c5a5ec"/><rect x="78" y="270" width="160" height="30" rx="15" fill="#c5a5ec"/>
+    <path d="M322 116 l16 34 38 5-28 26 7 37-33-18-34 18 7-37-28-26 38-5z" fill="#a988df"/>
+  </g>
+</g>
+<g fill="#ffe778"><path d="M230 225 l14 32 34 3-26 22 8 34-30-18-30 18 8-34-26-22 34-3z"/><path d="M1335 218 l11 25 27 3-20 18 6 27-24-15-24 15 6-27-20-18 27-3z"/></g>
+
+<!-- blue Pal -->
+<g transform="translate(235 425)" filter="url(#shadow)">
+  <path d="M160 0 C220 45 260 90 265 155 C270 230 215 300 135 300 C56 300 5 245 10 175 C14 116 54 78 88 56 C107 44 122 26 134 8 C142-3 151-5 160 0 Z" fill="url(#blue)" stroke="#2d6fa9" stroke-width="8"/>
+  <circle cx="105" cy="170" r="15" fill="#432015"/><circle cx="180" cy="170" r="15" fill="#432015"/>
+  <path d="M135 185 q12 18 24 0 q12 18 24 0" fill="none" stroke="#432015" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="78" cy="205" r="18" fill="#ff9bab"/><circle cx="207" cy="205" r="18" fill="#ff9bab"/>
+  <ellipse cx="95" cy="72" rx="28" ry="14" fill="#fff" opacity=".72" transform="rotate(-35 95 72)"/>
+</g>
+
+<!-- center cream Pal -->
+<g transform="translate(505 390)" filter="url(#shadow)">
+  <path d="M120 40 C145-20 230-60 330-58 C430-56 512-14 535 50 C595 72 620 126 610 205 C600 310 495 375 330 375 C162 375 58 313 49 208 C42 128 70 72 120 40 Z" fill="url(#cream)" stroke="#6d3e2f" stroke-width="9"/>
+  <circle cx="250" cy="190" r="24" fill="#432015"/><circle cx="410" cy="190" r="24" fill="#432015"/>
+  <path d="M315 206 q17 25 34 0 q17 25 34 0" fill="none" stroke="#432015" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="205" cy="245" r="29" fill="#ff9eaa"/><circle cx="455" cy="245" r="29" fill="#ff9eaa"/>
+  <ellipse cx="250" cy="72" rx="44" ry="22" fill="#fff" opacity=".72" transform="rotate(-32 250 72)"/>
+  <ellipse cx="100" cy="175" rx="38" ry="68" fill="#ffe9d8" stroke="#6d3e2f" stroke-width="7"/><ellipse cx="560" cy="175" rx="38" ry="68" fill="#ffe9d8" stroke="#6d3e2f" stroke-width="7"/>
+</g>
+
+<!-- green Pal -->
+<g transform="translate(995 355)" filter="url(#shadow)">
+  <path d="M90 120 C115 55 185 25 250 40 C330 57 367 125 352 200 C340 270 278 304 190 295 C107 287 55 242 58 180 C60 155 70 135 90 120 Z" fill="url(#green)" stroke="#2f8b42" stroke-width="8"/>
+  <path d="M298 72 C340 12 425 25 450 100 C474 171 438 255 370 284 C343 295 320 296 297 292 C330 243 336 183 315 130 Z" fill="url(#green)" stroke="#2f8b42" stroke-width="8"/>
+  <path d="M388 112 q50 40 0 83" fill="none" stroke="#27933c" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="165" cy="170" r="15" fill="#432015"/><circle cx="260" cy="170" r="15" fill="#432015"/>
+  <path d="M195 186 q12 18 24 0 q12 18 24 0" fill="none" stroke="#432015" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="130" cy="205" r="18" fill="#ff9bab"/><circle cx="295" cy="205" r="18" fill="#ff9bab"/>
+  <path d="M210 236 C188 207 174 178 187 154 C213 162 230 180 235 205 C247 180 270 165 295 166 C298 196 277 224 236 246 Z" fill="#8fd73e" stroke="#4b9a28" stroke-width="5"/>
+</g>
+
+<!-- yellow Pal -->
+<g transform="translate(980 600)" filter="url(#shadow)">
+  <path d="M80 85 C110 32 174 15 235 35 C300 56 330 110 316 168 C305 221 259 248 190 248 C119 248 66 220 60 168 C56 133 63 108 80 85 Z" fill="url(#yellow)" stroke="#ae7a22" stroke-width="7"/>
+  <circle cx="135" cy="145" r="13" fill="#432015"/><circle cx="240" cy="145" r="13" fill="#432015"/>
+  <path d="M167 160 q11 16 22 0 q11 16 22 0" fill="none" stroke="#432015" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="110" cy="180" r="16" fill="#ff9bab"/><circle cx="265" cy="180" r="16" fill="#ff9bab"/>
+  <path d="M183 54 C158 25 160 -5 183 -25 C205 -5 207 25 183 54 Z" fill="#8fd73e" stroke="#4b9a28" stroke-width="5"/><path d="M183 10 C215 -5 240 2 252 24 C224 40 200 35 183 10 Z" fill="#9fe34a" stroke="#4b9a28" stroke-width="5"/>
+</g>
+
+<g fill="#fff6a5"><circle cx="245" cy="370" r="8"/><circle cx="1360" cy="410" r="8"/><path d="M768 215 l9 22 22 9-22 9-9 22-9-22-22-9 22-9z"/></g>
+</svg>
