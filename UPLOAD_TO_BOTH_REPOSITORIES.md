@@ -1,89 +1,24 @@
-> **2026-10-08 / Updated publishing policy:** `toybird-apps/toybird-apps-site` is the canonical product-content repository. `toybird-apps/toybird-apps.github.io` is a redirect-only legacy HTML host. Do **not** upload identical product, Support, or Privacy HTML to both repositories. Preserve `app-ads.txt` and verification files in the legacy repository.
+# Canonical publishing policy for Toybird Labs (2026-10-08)
 
-# ToyBird Apps GitHub Pages 共通アップロード用パッケージ
+**The old instruction to upload identical HTML to two repositories is retired.**
 
-このZIPの中身を、以下の2つのGitHubリポジトリのルートへ同じようにアップロードしてください。
+The goal of this policy is to keep `https://labs.toybird.com/` as the single canonical host for Toybird Labs product, Support, and Privacy pages.
 
-1. `toybird-apps/toybird-apps-site`
-2. `toybird-apps/toybird-apps.github.io`
+| Repository | Current role |
+|---|---|
+| `toybird-apps/toybird-apps-site` | **Source of truth.** Edit and publish the full pages here. GitHub Pages serves `labs.toybird.com`. |
+| `toybird-apps/toybird-apps.github.io` | **Legacy redirects only.** Existing HTML paths immediately forward to the equivalent path on `labs.toybird.com`. Do not sync content from the canonical repo. |
+| `toybird-apps/toybird-lp-site` | Separate portfolio and marketing site. Its independent product landing pages have their own canonical URLs. It may link to the canonical Labs product documentation. |
 
-## 目的
+## Update procedure
+1. Make product-page and Support/Privacy changes **only** in `toybird-apps-site`.
+2. Preserve correct `index,follow` on searchable product pages, intentional `noindex,follow` on utility pages, and valid canonical URLs.
+3. Maintain the Labs sitemap only for pages intended for Google indexing; update `lastmod` when substantive content actually changes.
+4. Do **not** copy HTML to the legacy `toybird-apps.github.io` repository. New old-host paths require an explicit redirect to an existing Labs page.
+5. Keep `app-ads.txt` and ownership verification files at their required historical locations. They are **not** product HTML and must not be removed by the redirect migration.
+6. Test canonical page access, redirect target availability, cross-site links, and Search Console indexing separately after deployment.
 
-- 既存のアプリ紹介・サポート・プライバシーポリシーページを維持する
-- `https://toybird-apps.github.io/app-ads.txt` を公開する
-- `https://toybird-apps.github.io/toybird-apps-site/app-ads.txt` も維持する
-- アプリやApp Store Connectから参照される既存URLを壊さない
+## Search Console note
+A successful GitHub Pages deployment, canonical link, or live URL inspection means the page can be served; it does **not** guarantee that Google has indexed the URL. Judge success from the Google Index status in Search Console, not from the GitHub build or a simple `site:` query.
 
-## app-ads.txt
-
-ルートの `app-ads.txt` には、以下の行が1回だけ入っています。
-
-```text
-google.com, pub-6129814643212445, DIRECT, f08c47fec0942fa0
-```
-
-## GitHubでのアップロード方法
-
-各リポジトリで以下を行います。
-
-1. リポジトリを開く
-2. `Add file` → `Upload files`
-3. このZIPを展開したフォルダの**中身**をすべてアップロード
-4. `Commit changes`
-5. `Settings` → `Pages`
-6. `Deploy from a branch`
-7. `main` / `/ (root)` を選択して保存
-
-## 公開後の確認URL
-
-最低限、以下をブラウザで確認してください。
-
-```text
-https://toybird-apps.github.io/app-ads.txt
-https://toybird-apps.github.io/toybird-apps-site/app-ads.txt
-https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/
-https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/support.html
-https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/privacy.html
-https://toybird-apps.github.io/toybird-apps-site/apps/find-it-show-it/
-https://toybird-apps.github.io/toybird-apps-site/apps/find-it-show-it/support.html
-https://toybird-apps.github.io/toybird-apps-site/apps/find-it-show-it/privacy.html
-https://toybird-apps.github.io/toybird-apps-site/apps/find-it-show-it/ja/
-```
-
-ルート側にも同じページが公開されます。
-
-```text
-https://toybird-apps.github.io/apps/yuru-dansha/ja/
-```
-
-ページが重複しても問題ありません。App Storeやアプリで参照済みのURLは、そのまま維持してください。
-
-## Prompt Ready 公開後の追加確認URL
-
-```text
-https://toybird-apps.github.io/apps/prompt-ready/
-https://toybird-apps.github.io/apps/prompt-ready/support.html
-https://toybird-apps.github.io/apps/prompt-ready/privacy.html
-https://toybird-apps.github.io/apps/prompt-ready/ja/
-https://toybird-apps.github.io/apps/prompt-ready/ja/support.html
-https://toybird-apps.github.io/apps/prompt-ready/ja/privacy.html
-
-https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/
-https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/support.html
-https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/privacy.html
-https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/ja/
-https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/ja/support.html
-https://toybird-apps.github.io/toybird-apps-site/apps/prompt-ready/ja/privacy.html
-```
-## KoeSub 公開後の追加確認URL
-
-```text
-https://toybird-apps.github.io/apps/koesub/
-https://toybird-apps.github.io/apps/koesub/support.html
-https://toybird-apps.github.io/apps/koesub/privacy.html
-
-https://toybird-apps.github.io/toybird-apps-site/apps/koesub/
-https://toybird-apps.github.io/toybird-apps-site/apps/koesub/support.html
-https://toybird-apps.github.io/toybird-apps-site/apps/koesub/privacy.html
-```
-
+Retained file name `UPLOAD_TO_BOTH_REPOSITORIES.md` is historical only. **Do not follow the old duplicate-upload process.**
