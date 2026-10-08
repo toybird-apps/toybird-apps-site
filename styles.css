@@ -81,3 +81,26 @@
 .toyceipt-hero-showcase{padding:14px;overflow:hidden;background:linear-gradient(145deg,#eaf6ff,#fff0f7)}
 .toyceipt-hero-showcase img{display:block;width:100%;max-width:none;height:auto;border-radius:16px;box-shadow:none}
 @media(max-width:780px){.toyceipt-hero-showcase{min-height:0;padding:10px}.toyceipt-hero-showcase img{width:100%;border-radius:12px}}
+
+
+/* 2026-10-08: evidence and workflow sections; shared across official product pages */
+.evidence-section .inner,.discovery-section .inner{max-width:var(--max);margin:0 auto;padding:0 22px}
+.evidence-kicker{text-transform:uppercase;letter-spacing:.09em;color:var(--brand);font-weight:800;font-size:.81rem;margin:0 0 10px}
+.evidence-section h2,.discovery-section h2{font-size:clamp(1.55rem,2.7vw,2.15rem);line-height:1.22;margin:0 0 16px}
+.evidence-section h3,.discovery-section h3{font-size:1.12rem;line-height:1.35;margin:0 0 11px}
+.evidence-section p,.discovery-section p{line-height:1.76}
+.evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:26px 0}
+.evidence-tile{border:1px solid var(--line);border-radius:var(--radius);padding:23px;background:#fff}
+.evidence-tile p{margin:0;color:var(--text)}
+.evidence-tile a{text-decoration:underline;text-underline-offset:3px}
+.evidence-figure{margin:26px 0 30px}
+.evidence-figure img{width:100%;max-height:530px;object-fit:contain;background:#f5f7fb;border-radius:18px;border:1px solid var(--line)}
+.evidence-figure figcaption{font-size:.88rem;color:var(--muted);line-height:1.55;margin-top:10px}
+.evidence-section .evidence-steps{padding-left:1.5rem;line-height:1.75}
+.evidence-steps li{padding:0 0 10px 5px}
+.evidence-footnote{border-top:1px solid var(--line);padding-top:17px;margin-top:24px;color:var(--muted)}
+.evidence-comparison{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0 28px}
+.evidence-comparison>div{border:1px solid var(--line);border-radius:16px;padding:20px;background:#fff}
+.evidence-comparison strong{display:block;font-size:1rem}
+.evidence-comparison p{margin:10px 0 0}
+@media(max-width:780px){.evidence-grid,.evidence-comparison{grid-template-columns:1fr}.evidence-section .inner,.discovery-section .inner{padding:0 16px}.evidence-tile{padding:18px}.evidence-figure img{max-height:380px}}
