@@ -1,3 +1,5 @@
+> **2026-10-08 / Updated publishing policy:** `toybird-apps/toybird-apps-site` is the canonical product-content repository. `toybird-apps/toybird-apps.github.io` is a redirect-only legacy HTML host. Do **not** upload identical product, Support, or Privacy HTML to both repositories. Preserve `app-ads.txt` and verification files in the legacy repository.
+
 # ToyBird Apps GitHub Pages 共通アップロード用パッケージ
 
 このZIPの中身を、以下の2つのGitHubリポジトリのルートへ同じようにアップロードしてください。
