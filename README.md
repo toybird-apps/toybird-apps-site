@@ -1,261 +1,37 @@
-# Toybird Apps Site
+# Toybird Labs product site
 
-GitHub Pages website for Toybird Apps.
+Public site: https://labs.toybird.com/  
+Repository: `toybird-apps/toybird-apps-site`  
+Publishing branch: `main` (GitHub Pages)
 
-## Purpose
+## Content
 
-Toybird Apps publishes useful utilities designed to make everyday work and daily life clearer, smoother, and easier.
+- `index.html`: English app directory and workflow overview.
+- `apps/<slug>/index.html`: canonical product details.
+- `apps/<slug>/support.html`, `privacy.html`, and any app-specific `terms.html`: help and policies.
+- `apps/<slug>/ja/`: Japanese pages where available.
+- `support/`, `privacy/`, `terms/`, `legal/`: shared help and policy directories.
+- `styles.css` and `assets/`: shared presentation and media.
+- `sitemap.xml`: indexable canonical pages only; help/policy pages marked noindex are not included.
+- `robots.txt`, verification files, `app-ads.txt`, and IndexNow key: operational files to preserve.
 
-## Published URLs
+The portfolio, localized landing pages, and blog are maintained separately at https://lp.toybird.com/ in `toybird-lp-site`.
 
-If the GitHub account is `toybird-apps` and the repository is `toybird-apps-site`, the public URLs are:
+## Maintenance
 
-```text
-Top:
-https://toybird-apps.github.io/toybird-apps-site/
+1. Confirm public release information and actual app behavior before changing features, pricing, system requirements, or download links.
+2. Keep English/Japanese pages, support instructions, metadata, structured data, and root app cards consistent.
+3. Preserve established slugs, including `brainlot-puzzle` for Brainrot Tile Quest and `gmail-spotlight-indexer` for Toybird Webmail Indexer.
+4. Check relative links, image targets, language links, anchors, JSON-LD, and mobile wrapping.
+5. Set sitemap `lastmod` to the actual date of the relevant page change, not the date of an unrelated site deployment.
+6. Commit the reviewed files together to `main`; verify the live site after GitHub Pages publishes.
 
-DropReady Media:
-https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/
+Existing one-off maintenance workflows reflect earlier updates. Review their scripts and scope before running them against current content.
 
-DropReady Media Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/privacy.html
+## Distribution
 
-DropReady Media Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/support.html
-
-DropReady Media Japanese Page:
-https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/ja/
-
-DropReady Media Japanese Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/ja/privacy.html
-
-DropReady Media Japanese Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/dropready-media/ja/support.html
-
-
-Meeting Ready:
-https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/
-
-Meeting Ready Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/privacy.html
-
-Meeting Ready Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/support.html
-
-Meeting Ready Japanese Page:
-https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/ja/
-
-Meeting Ready Japanese Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/ja/privacy.html
-
-Meeting Ready Japanese Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/meeting-ready/ja/support.html
-
-Pointer Cue:
-https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/
-
-Pointer Cue Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/privacy.html
-
-Pointer Cue Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/pointer-cue/support.html
-
-Meet Here Card:
-https://toybird-apps.github.io/toybird-apps-site/apps/meet-here-card/
-
-Meet Here Card Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/meet-here-card/privacy.html
-
-Meet Here Card Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/meet-here-card/support.html
-
-Meet Here Card Japanese Page:
-https://toybird-apps.github.io/toybird-apps-site/apps/meet-here-card/ja/
-
-Meet Here Card Japanese Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/meet-here-card/ja/privacy.html
-
-Meet Here Card Japanese Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/meet-here-card/ja/support.html
-
-Art Spot:
-https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/
-
-Art Spot Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/privacy.html
-
-Art Spot Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/support.html
-
-Art Spot Japanese Page:
-https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/ja/
-
-Art Spot Japanese Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/ja/privacy.html
-
-Art Spot Japanese Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/art-spot/ja/support.html
-
-Yuru Dansha:
-https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/
-
-Yuru Dansha Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/privacy.html
-
-Yuru Dansha Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/support.html
-
-Yuru Dansha Japanese Page:
-https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/
-
-Yuru Dansha Japanese Privacy Policy URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/privacy.html
-
-Yuru Dansha Japanese Support URL:
-https://toybird-apps.github.io/toybird-apps-site/apps/yuru-dansha/ja/support.html
-```
-
-## App Information
-
-### DropReady Media
-
-```text
-App Name: DropReady Media
-Bundle ID: com.toybirdapps.dropreadymedia
-Platform: macOS
-Minimum OS: macOS Ventura 13 or later
-```
-
-
-### Meeting Ready
-
-```text
-App Name: Meeting Ready
-Bundle ID: com.toybird.meetingready
-Platform: macOS
-Minimum OS: macOS Ventura 13 or later
-Privacy: No account, ads, analytics SDK, or tracking; calendar checks remain local; accesses public Zoom HTTPS pages for public version guidance
-```
-
-### Meet Here Card
-
-```text
-App Name: Meet Here Card
-Bundle ID: com.toybirdapps.meetherecard
-Platform: iOS
-```
-
-### Art Spot
-
-```text
-Japanese App Name: 名画まちがい探し
-English App Name: Art Spot
-Bundle ID: com.toybird.oddspot
-Platform: iOS
-Privacy: Uses Google AdMob and Google UMP
-```
-
-### Yuru Dansha
-
-```text
-Japanese App Name: ゆる断写
-English App Name: Yuru Dansha
-Bundle ID: com.toybird.yurudansha
-Platform: iOS / iPadOS
-Privacy: Photo-library access with user permission; original media remains local; discarded-item thumbnails are stored locally for up to 30 days; uses Google AdMob and Google UMP
-```
+Use the verified store links on each product page. Prompt Ready and Pointer Cue have Windows distribution links; Pointer Cue's existing Windows edition is not feature-equivalent to the current macOS edition. Do not fabricate an App Store ID for Toybird Webmail Indexer; its product page directs availability questions to support.
 
 ## Support
 
-- Email: `support@toybird.com`
-
-## Manual Upload
-
-1. Download and extract the ZIP package.
-2. Open the extracted `toybird-apps-site_yuru-dansha_added` folder.
-3. Upload the contents of that folder to the root of the `toybird-apps-site` GitHub repository.
-4. Commit the changes.
-5. Wait for GitHub Pages deployment to finish.
-6. Open the URLs above and verify that the pages load correctly.
-
-## Structure
-
-```text
-toybird-apps-site/
-├── index.html
-├── styles.css
-├── README.md
-├── app-ads.txt
-├── assets/
-│   ├── logo.svg
-│   ├── meet-here-card-icon.png
-│   ├── dropready-media-icon.png
-│   ├── art-spot-icon.png
-│   └── yuru-dansha-icon.png
-└── apps/
-    ├── dropready-media/
-    │   ├── index.html
-    │   ├── privacy.html
-    │   ├── support.html
-    │   └── ja/
-    │       ├── index.html
-    │       ├── privacy.html
-    │       └── support.html
-    ├── meeting-ready/
-    │   ├── index.html
-    │   ├── privacy.html
-    │   ├── support.html
-    │   └── ja/
-    │       ├── index.html
-    │       ├── privacy.html
-    │       └── support.html
-    ├── pointer-cue/
-    │   ├── index.html
-    │   ├── privacy.html
-    │   └── support.html
-    ├── meet-here-card/
-    │   ├── index.html
-    │   ├── privacy.html
-    │   ├── support.html
-    │   └── ja/
-    │       ├── index.html
-    │       ├── privacy.html
-    │       └── support.html
-    ├── art-spot/
-    │   ├── index.html
-    │   ├── privacy.html
-    │   ├── support.html
-    │   └── ja/
-    │       ├── index.html
-    │       ├── privacy.html
-    │       └── support.html
-    └── yuru-dansha/
-        ├── index.html
-        ├── privacy.html
-        ├── support.html
-        └── ja/
-            ├── index.html
-            ├── privacy.html
-            └── support.html
-```
-
-## Verification Checklist
-
-After publishing, verify:
-
-- The top page shows DropReady Media, Meeting Ready, Pointer Cue, Meet Here Card, Art Spot, and Yuru Dansha.
-- Existing app pages still load correctly.
-- Yuru Dansha English and Japanese product, support, and privacy pages load correctly.
-- Yuru Dansha language-switch links work.
-- The `support@toybird.com` mail links open correctly.
-- The Yuru Dansha icon loads correctly on the top page and product pages.
-- `app-ads.txt` is present at the repository root.
-
-
-## Meeting Ready Verification
-
-- The Meeting Ready English and Japanese product, support, and privacy pages load correctly.
-- The Meeting Ready language-switch links work.
-- The Meeting Ready `support@toybird.com` mail links open correctly.
-- The Meeting Ready icon loads correctly on the top page and product pages.
-- The Meeting Ready privacy policy accurately states that public Zoom HTTPS pages are used for public version guidance.
+support@toybird.com

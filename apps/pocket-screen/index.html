@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pocket Screen | Toybird Labs</title>
-  <meta name="description" content="Pocket Screen keeps supported Mac app windows visible as separate live Reference Views while you work, with up to four views, Focus View, Arrange, and four quality modes including Ultra.">
+  <meta name="description" content="Keep Mac app windows in sight with up to four live Reference Views, precise Focus View selection, custom keyboard shortcuts, and clearer controls in Pocket Screen 2.1.">
   <style>
     .producthunt-award {
       display: inline-flex;
@@ -86,7 +86,7 @@
 
 <!-- SEO-AIO-METADATA:START -->
 <meta property="og:title" content="Pocket Screen | Toybird Labs">
-<meta property="og:description" content="Pocket Screen keeps supported Mac app windows visible as separate live Reference Views while you work, with up to four views, Focus View, Arrange, and four quality modes including Ultra.">
+<meta property="og:description" content="Keep Mac app windows in sight with up to four live Reference Views, precise Focus View selection, custom keyboard shortcuts, and clearer controls in Pocket Screen 2.1.">
 <meta property="og:url" content="https://labs.toybird.com/apps/pocket-screen/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Toybird Labs">
@@ -100,10 +100,11 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Pocket Screen",
+  "softwareVersion": "2.1.0",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "macOS 14 or later",
   "url": "https://labs.toybird.com/apps/pocket-screen/",
-  "description": "Pocket Screen keeps supported Mac app windows visible as separate live Reference Views while you work, with up to four views, Focus View, Arrange, and four quality modes including Ultra.",
+  "description": "Keep Mac app windows in sight with up to four live Reference Views, precise Focus View selection, custom keyboard shortcuts, and clearer controls in Pocket Screen 2.1.",
   "inLanguage": "en",
   "offers": [
     {
@@ -132,7 +133,9 @@
     "Focus View",
     "Four quality modes from Energy Saver to Ultra",
     "Freeze and Click-Through controls",
-    "Show and arrange views with shortcuts"
+    "Custom keyboard shortcuts for creating, switching, showing, hiding, and closing views",
+    "Clear selected, paused, and updating indicators",
+    "Improved reference image retention when switching Spaces"
   ],
   "author": {
     "@type": "Organization",
@@ -174,7 +177,7 @@
   <section class="page-hero product-hero">
     <div class="product-hero-grid">
       <div>
-        <span class="eyebrow">macOS menu bar utility</span>
+        <span class="eyebrow">macOS menu bar utility · v2.1.0</span>
         <h1>Pocket Screen</h1>
         <p class="lead">Keep the windows you need visible while you work.<br>
         Pocket Screen creates separate, resizable, always-on-top Reference Views from supported Mac app windows while the originals stay in place. Free supports up to two views; Unlimited supports up to four with no time limit.</p>
@@ -214,11 +217,11 @@
       </article>
       <article class="card">
         <h3>Instant target switching</h3>
-        <p>The global shortcut (Option-Command-P by default) creates the first PiP, then switches the selected PiP to the current frontmost window. Add Another PiP and Close Selected PiP also have configurable global shortcuts.</p>
+        <p>The primary shortcut (Option-Command-P by default) creates the first PiP, then switches the selected PiP to the frontmost window. In Settings, choose Custom to set separate shortcuts for creating or switching, showing or hiding all views, adding a view, and closing the selected view.</p>
       </article>
       <article class="card">
         <h3>Focus View</h3>
-        <p>Select a region inside a PiP and expand just that area to fill the view. Each PiP keeps its own Focus View state.</p>
+        <p>Select a region inside a PiP and expand just that area to fill the view. Version 2.1 improves selection precision for smaller text and icons. Each PiP keeps its own Focus View state.</p>
       </article>
       <article class="card">
         <h3>Four quality modes</h3>
@@ -226,15 +229,15 @@
       </article>
       <article class="card">
         <h3>Per-view controls</h3>
-        <p>Each active Reference View can keep its own opacity, quality, Focus View, Freeze, and Click-Through settings.</p>
+        <p>Each active Reference View can keep its own opacity, quality, Focus View, Freeze, and Click-Through settings. Refined selection outlines and Paused / Updating indicators help you tell which view is selected and whether its content is live.</p>
       </article>
       <article class="card">
         <h3>Temporary Hide</h3>
-        <p>Temporarily hide all PiPs with Shift plus the primary shortcut, then restore them without losing their source, position, Focus View, freeze, click-through, opacity, or quality state.</p>
+        <p>Temporarily hide or restore all PiPs without losing their current state. The Default shortcut is Shift-Option-Command-P; Custom mode lets you choose a separate Show / Hide All PiPs shortcut.</p>
       </article>
       <article class="card">
         <h3>Arrange, move, resize, and remember</h3>
-        <p>Show or arrange Reference Views with shortcuts, move or resize them around your workspace, and keep their placement when you return to your setup.</p>
+        <p>Move or resize Reference Views around your workspace, including near screen edges. Version 2.1 improves placement preservation; use Arrange Reference Views from the menu to bring views back into a useful layout.</p>
       </article>
       <article class="card">
         <h3>Live content, processed locally</h3>
@@ -242,7 +245,7 @@
       </article>
       <article class="card">
         <h3>Space- and display-aware</h3>
-        <p>PiPs hide when their source Space is unavailable and return when the source becomes available again. Placement is preserved across target and display changes.</p>
+        <p>When switching Spaces interrupts live capture, Pocket Screen can preserve the last available reference image and show Paused or Updating while it waits for the source or restores capture. Version 2.1 improves image retention and recovery; behavior still depends on the source app and macOS.</p>
       </article>
       <article class="card">
         <h3>Optional capture exclusion on macOS 26+</h3>
@@ -259,7 +262,7 @@
         <li>Press the configured primary shortcut (Option-Command-P by default) or use the menu bar to create the first Reference View.</li>
         <li>Add more Reference Views when needed. You can also create multiple views from the same source window. Free supports up to two views; Unlimited supports up to four.</li>
         <li>Select a Reference View, then use the primary shortcut to switch that view to the current frontmost window.</li>
-        <li>Use Focus View, opacity, quality, Freeze, or Click-Through as needed, and use the available shortcuts to show, hide, or arrange your views.</li>
+        <li>Use Focus View, opacity, quality, Freeze, or Click-Through as needed, and use your configured shortcuts to show or hide views, or the menu to arrange them.</li>
       </ol>
       <p class="notice">Pocket Screen requires macOS Screen Recording permission so it can capture the selected window. Captured content is used only for the local PiP preview.</p>
       <div class="button-row">

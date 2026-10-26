@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pocket Screen Support | Toybird Labs</title>
-  <meta name="description" content="Pocket Screen support for Reference Views, Focus View, four quality modes, multiple views from the same source, shortcuts, permissions, and troubleshooting.">
+  <meta name="description" content="Pocket Screen 2.1 support for custom shortcuts, selected / paused / updating indicators, Focus View, Spaces recovery, permissions, and troubleshooting.">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="icon" href="../../assets/pocket-screen-icon.png">
   <meta name="robots" content="noindex,follow">
@@ -26,7 +26,7 @@
 
 <main>
   <section class="page-hero">
-    <span class="eyebrow">Pocket Screen</span>
+    <span class="eyebrow">Pocket Screen · v2.1.0</span>
     <h1>Support</h1>
     <p class="lead">Help, troubleshooting, and frequently asked questions</p>
   </section>
@@ -64,8 +64,8 @@
 
     <article class="card">
       <h2>Space and Full-Screen Behavior</h2>
-      <p>If the source window becomes unavailable from the current Desktop or Space, Pocket Screen can temporarily hide that PiP instead of showing a black or stale preview. It restores the PiP when the source is available again.</p>
-      <p>Pocket Screen also includes recovery behavior for display changes, sleep/wake, Space restoration, and supported full-screen or Stage Manager transitions.</p>
+      <p>Switching Desktop or Space can temporarily interrupt live capture. Pocket Screen 2.1 improves retention of the last available reference image while the source is unavailable or capture is recovering. A preserved image is a reference, not a live update.</p>
+      <p>Paused and Updating indicators distinguish these states. Return to the source Space or make the source window available again if live updates do not resume. Capture behavior depends on macOS and the source app, especially with protected content, full-screen windows, and Stage Manager.</p>
     </article>
 
 
@@ -79,13 +79,29 @@
     <article class="card">
       <h2>Multiple Reference Views and Arrange</h2>
       <p>Free supports up to two Reference Views and Unlimited supports up to four. Pocket Screen can also create multiple Reference Views from the same supported source window.</p>
-      <p>Use the available Arrange command or shortcut when you want to bring your Reference Views back into a useful layout around the main workspace.</p>
+      <p>Use Arrange Reference Views from the menu when you want to bring your Reference Views back into a useful layout around the main workspace. Version 2.1 also improves movement, resizing, and position preservation near screen edges.</p>
     </article>
 
     <article class="card">
-      <h2>Temporary Hide and Global Shortcuts</h2>
-      <p>Press Shift plus the selected primary shortcut to temporarily hide or restore all PiPs without losing their current state.</p>
-      <p>Add Another PiP and Close Selected PiP each have a configurable shortcut in Settings and can also be disabled.</p>
+      <h2>Custom Keyboard Shortcuts</h2>
+      <p>In Settings, use <strong>Default</strong> for the standard bindings or choose <strong>Custom</strong> to configure four actions: create or switch a PiP, show or hide all PiPs, add another PiP, and close the selected PiP.</p>
+      <ol>
+        <li>Choose Custom and click the shortcut field for the action.</li>
+        <li>Press Command, Control, or Option with a key. Escape cancels recording; the clear control disables that action’s shortcut.</li>
+        <li>Resolve any duplicate, reserved, or unavailable shortcut warning, then click Save.</li>
+      </ol>
+      <p>Existing shortcuts remain active until you save. Settings from earlier versions are carried forward. In Default mode, Option-Command-P creates or switches a PiP and Shift-Option-Command-P shows or hides all PiPs. In Custom mode, show/hide is a separate binding.</p>
+      <p>If you use a Stream Deck profile, its key combinations must match the shortcuts saved in Pocket Screen.</p>
+    </article>
+
+    <article class="card">
+      <h2>Selected, Paused, and Updating</h2>
+      <ul>
+        <li><strong>Selected:</strong> when more than one view is displayed, a thin outline identifies the view targeted by switching or closing commands.</li>
+        <li><strong>Paused:</strong> live capture is temporarily paused; the last available reference image may remain visible.</li>
+        <li><strong>Updating:</strong> Pocket Screen is restoring or refreshing capture. Wait briefly, or return to the source window if it does not resume.</li>
+      </ul>
+      <p>Automatic Paused / Updating states are separate from <strong>Freeze</strong>, which you turn on intentionally to keep an image unchanged.</p>
     </article>
 
     <article class="card">
@@ -111,8 +127,8 @@
       <h3>Does the app upload captured screen content?</h3>
       <p>No. Captured pixels are used only for the local PiP preview and are not uploaded to developer servers or external AI services.</p>
 
-      <h3>Why does the PiP hide when I switch Desktop or Space?</h3>
-      <p>The source window may no longer be available to capture from the active Space. Pocket Screen hides the PiP preview and restores it when the source window is available again.</p>
+      <h3>Why does a Reference View stop updating when I switch Desktop or Space?</h3>
+      <p>The source may not be available for live capture from the active Space. A preserved image with Paused or Updating is not a live frame. Make the source window available again and allow capture to recover. If the view remains blank or does not recover, check permissions and try switching the selected view back to that source.</p>
 
       <h3>Why is the PiP preview black?</h3>
       <p>Check Screen Recording permission first. A black preview can also occur when the source window is minimized, closed, protected by the source app, or located on another Space.</p>
@@ -125,7 +141,7 @@
       <h2>App Information</h2>
       <p>App name: Pocket Screen</p>
       <p>Bundle ID: <span class="code-like">com.toybird.PocketScreen</span></p>
-      <p>The installed app version is shown in the app’s About screen.</p>
+      <p>Current release: v2.1.0. The installed app version is shown in the app’s About screen.</p>
       <p><a href="https://apps.apple.com/us/app/id6788211562" target="_blank" rel="noopener">View Pocket Screen on the App Store</a></p>
     </article>
 
