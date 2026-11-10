@@ -104,3 +104,12 @@
 .evidence-comparison strong{display:block;font-size:1rem}
 .evidence-comparison p{margin:10px 0 0}
 @media(max-width:780px){.evidence-grid,.evidence-comparison{grid-template-columns:1fr}.evidence-section .inner,.discovery-section .inner{padding:0 16px}.evidence-tile{padding:18px}.evidence-figure img{max-height:380px}}
+
+/* Pointer Cue: dated StartupBase award, secondary to the download action. */
+.pointer-cue-award{margin-top:24px}
+.pointer-cue-award a{display:inline-flex;flex-direction:column;align-items:flex-start;gap:8px;max-width:100%;text-decoration:none}
+.pointer-cue-award img{display:block;width:225px;max-width:100%;height:auto;aspect-ratio:300/80}
+.pointer-cue-award span{font-size:12px;line-height:1.5;color:var(--muted)}
+.pointer-cue-award a:hover span{text-decoration:underline}
+.pointer-cue-award a:focus-visible{outline:2px solid var(--brand);outline-offset:5px;border-radius:8px}
+.pointer-cue-award-label{display:inline-block;max-width:100%;padding:5px 9px;border:1px solid #e6c46c;border-radius:8px;background:#fff9e8;color:#745000;font-size:12px;line-height:1.5;font-weight:600}
