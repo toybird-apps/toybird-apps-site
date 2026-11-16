@@ -114,4 +114,7 @@
 .pointer-cue-award a:focus-visible{outline:2px solid var(--brand);outline-offset:5px;border-radius:8px}
 .pointer-cue-award-label{display:inline-block;max-width:100%;padding:5px 9px;border:1px solid #e6c46c;border-radius:8px;background:#fff9e8;color:#745000;font-size:12px;line-height:1.5;font-weight:600}
 
-.pointer-cue-award-labels{display:flex;flex-wrap:wrap;gap:8px}
+.pointer-cue-award-labels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.pointer-cue-award-labels>span{min-width:0;display:flex;flex-direction:column;gap:5px}
+.pointer-cue-award-labels img{display:block;width:100%;max-width:150px;height:auto;aspect-ratio:300/80}
+.pointer-cue-award-labels small{font-size:11px;line-height:1.5;color:var(--muted)}
