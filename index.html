@@ -10,6 +10,14 @@
 <link href="styles.css?v=20261116-startupbase-weekly2" rel="stylesheet"/>
 <link href="assets/logo.svg" rel="icon"/>
 <style>
+    .pocket-screen-card { position: relative; }
+    .pocket-screen-card-link { color: inherit; }
+    .pocket-screen-card-link::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }
+    .pocket-screen-card-link:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+    .pocket-screen-badges { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 6px; width: fit-content; }
+    .pocket-screen-badges a { border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; background: var(--bg); color: var(--text); font-size: 12px; font-weight: 600; line-height: 1.5; }
+    .pocket-screen-badges a:hover { text-decoration: underline; }
+    .pocket-screen-badges a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
     .spacerr-badge-row {
       max-width: var(--max);
       margin: 0 auto;
@@ -117,16 +125,20 @@
 <h2>Apps</h2>
 <p class="section-intro">Browse the full Toybird portfolio across macOS, iPhone, iPad, and Windows.</p>
 <div class="grid">
-<a class="card app-card" href="apps/pocket-screen/">
+<div class="card app-card pocket-screen-card">
 <div class="app-title">
 <span class="icon-mini app-icon-mini"><img alt="" height="48" src="assets/pocket-screen-icon.png" width="48"/></span>
 <div>
-<strong>Pocket Screen</strong><br/>
+<strong><a class="pocket-screen-card-link" href="apps/pocket-screen/">Pocket Screen</a></strong><br/>
 <span class="badge">macOS 14+</span>
 </div>
 </div>
 <p>Keep live reference windows visible while you work. Use up to 2 views with Free or 4 with Unlimited, choose your quality, and set shortcuts that fit your workflow.</p>
-</a>
+<div class="pocket-screen-badges">
+<a href="https://www.producthunt.com/products/toybird-labs/awards">Product Hunt · Daily #4</a>
+<a href="https://sixcolors.com/post/2026/09/app-report-ai-to-the-rescue-no-really/">Featured in Six Colors</a>
+</div>
+</div>
 <a class="card app-card" href="apps/gmail-spotlight-indexer/">
 <div class="app-title">
 <span class="icon-mini app-icon-mini"><img alt="" height="48" src="assets/gmail-spotlight-indexer-icon.png" width="48"/></span>
